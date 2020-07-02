@@ -1,0 +1,3306 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="ko">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+    .swal-icon--error {
+    border-color: #f27474;
+    -webkit-animation: animateErrorIcon .5s;
+    animation: animateErrorIcon .5s
+  }
+
+  .swal-icon--error__x-mark {
+    position: relative;
+    display: block;
+    -webkit-animation: animateXMark .5s;
+    animation: animateXMark .5s
+  }
+
+  .swal-icon--error__line {
+    position: absolute;
+    height: 5px;
+    width: 47px;
+    background-color: #f27474;
+    display: block;
+    top: 37px;
+    border-radius: 2px
+  }
+
+  .swal-icon--error__line--left {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: 17px
+  }
+
+  .swal-icon--error__line--right {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    right: 16px
+  }
+
+  @-webkit-keyframes animateErrorIcon {
+    0% {
+      -webkit-transform: rotateX(100deg);
+      transform: rotateX(100deg);
+      opacity: 0
+    }
+    to {
+      -webkit-transform: rotateX(0deg);
+      transform: rotateX(0deg);
+      opacity: 1
+    }
+  }
+
+  @keyframes animateErrorIcon {
+    0% {
+      -webkit-transform: rotateX(100deg);
+      transform: rotateX(100deg);
+      opacity: 0
+    }
+    to {
+      -webkit-transform: rotateX(0deg);
+      transform: rotateX(0deg);
+      opacity: 1
+    }
+  }
+
+  @-webkit-keyframes animateXMark {
+    0% {
+      -webkit-transform: scale(.4);
+      transform: scale(.4);
+      margin-top: 26px;
+      opacity: 0
+    }
+    50% {
+      -webkit-transform: scale(.4);
+      transform: scale(.4);
+      margin-top: 26px;
+      opacity: 0
+    }
+    80% {
+      -webkit-transform: scale(1.15);
+      transform: scale(1.15);
+      margin-top: -6px
+    }
+    to {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      margin-top: 0;
+      opacity: 1
+    }
+  }
+
+  @keyframes animateXMark {
+    0% {
+      -webkit-transform: scale(.4);
+      transform: scale(.4);
+      margin-top: 26px;
+      opacity: 0
+    }
+    50% {
+      -webkit-transform: scale(.4);
+      transform: scale(.4);
+      margin-top: 26px;
+      opacity: 0
+    }
+    80% {
+      -webkit-transform: scale(1.15);
+      transform: scale(1.15);
+      margin-top: -6px
+    }
+    to {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      margin-top: 0;
+      opacity: 1
+    }
+  }
+
+  .swal-icon--warning {
+    border-color: #f8bb86;
+    -webkit-animation: pulseWarning .75s infinite alternate;
+    animation: pulseWarning .75s infinite alternate
+  }
+
+  .swal-icon--warning__body {
+    width: 5px;
+    height: 47px;
+    top: 10px;
+    border-radius: 2px;
+    margin-left: -2px
+  }
+
+  .swal-icon--warning__body, .swal-icon--warning__dot {
+    position: absolute;
+    left: 50%;
+    background-color: #f8bb86
+  }
+
+  .swal-icon--warning__dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin-left: -4px;
+    bottom: -11px
+  }
+
+  @-webkit-keyframes pulseWarning {
+    0% {
+      border-color: #f8d486
+    }
+    to {
+      border-color: #f8bb86
+    }
+  }
+
+  @keyframes pulseWarning {
+    0% {
+      border-color: #f8d486
+    }
+    to {
+      border-color: #f8bb86
+    }
+  }
+
+  .swal-icon--success {
+    border-color: #a5dc86
+  }
+
+  .swal-icon--success:after, .swal-icon--success:before {
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 60px;
+    height: 120px;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+  }
+
+  .swal-icon--success:before {
+    border-radius: 120px 0 0 120px;
+    top: -7px;
+    left: -33px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 60px 60px;
+    transform-origin: 60px 60px
+  }
+
+  .swal-icon--success:after {
+    border-radius: 0 120px 120px 0;
+    top: -11px;
+    left: 30px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 0 60px;
+    transform-origin: 0 60px;
+    -webkit-animation: rotatePlaceholder 4.25s ease-in;
+    animation: rotatePlaceholder 4.25s ease-in
+  }
+
+  .swal-icon--success__ring {
+    width: 80px;
+    height: 80px;
+    border: 4px solid hsla(98, 55%, 69%, .2);
+    border-radius: 50%;
+    box-sizing: content-box;
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    z-index: 2
+  }
+
+  .swal-icon--success__hide-corners {
+    width: 5px;
+    height: 90px;
+    background-color: #fff;
+    position: absolute;
+    left: 28px;
+    top: 8px;
+    z-index: 1;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+  }
+
+  .swal-icon--success__line {
+    height: 5px;
+    background-color: #a5dc86;
+    display: block;
+    border-radius: 2px;
+    position: absolute;
+    z-index: 2
+  }
+
+  .swal-icon--success__line--tip {
+    width: 25px;
+    left: 14px;
+    top: 46px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-animation: animateSuccessTip .75s;
+    animation: animateSuccessTip .75s
+  }
+
+  .swal-icon--success__line--long {
+    width: 47px;
+    right: 8px;
+    top: 38px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: animateSuccessLong .75s;
+    animation: animateSuccessLong .75s
+  }
+
+  @-webkit-keyframes rotatePlaceholder {
+    0% {
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg)
+    }
+    5% {
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg)
+    }
+    12% {
+      -webkit-transform: rotate(-405deg);
+      transform: rotate(-405deg)
+    }
+    to {
+      -webkit-transform: rotate(-405deg);
+      transform: rotate(-405deg)
+    }
+  }
+
+  @keyframes rotatePlaceholder {
+    0% {
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg)
+    }
+    5% {
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg)
+    }
+    12% {
+      -webkit-transform: rotate(-405deg);
+      transform: rotate(-405deg)
+    }
+    to {
+      -webkit-transform: rotate(-405deg);
+      transform: rotate(-405deg)
+    }
+  }
+
+  @-webkit-keyframes animateSuccessTip {
+    0% {
+      width: 0;
+      left: 1px;
+      top: 19px
+    }
+    54% {
+      width: 0;
+      left: 1px;
+      top: 19px
+    }
+    70% {
+      width: 50px;
+      left: -8px;
+      top: 37px
+    }
+    84% {
+      width: 17px;
+      left: 21px;
+      top: 48px
+    }
+    to {
+      width: 25px;
+      left: 14px;
+      top: 45px
+    }
+  }
+
+  @keyframes animateSuccessTip {
+    0% {
+      width: 0;
+      left: 1px;
+      top: 19px
+    }
+    54% {
+      width: 0;
+      left: 1px;
+      top: 19px
+    }
+    70% {
+      width: 50px;
+      left: -8px;
+      top: 37px
+    }
+    84% {
+      width: 17px;
+      left: 21px;
+      top: 48px
+    }
+    to {
+      width: 25px;
+      left: 14px;
+      top: 45px
+    }
+  }
+
+  @-webkit-keyframes animateSuccessLong {
+    0% {
+      width: 0;
+      right: 46px;
+      top: 54px
+    }
+    65% {
+      width: 0;
+      right: 46px;
+      top: 54px
+    }
+    84% {
+      width: 55px;
+      right: 0;
+      top: 35px
+    }
+    to {
+      width: 47px;
+      right: 8px;
+      top: 38px
+    }
+  }
+
+  @keyframes animateSuccessLong {
+    0% {
+      width: 0;
+      right: 46px;
+      top: 54px
+    }
+    65% {
+      width: 0;
+      right: 46px;
+      top: 54px
+    }
+    84% {
+      width: 55px;
+      right: 0;
+      top: 35px
+    }
+    to {
+      width: 47px;
+      right: 8px;
+      top: 38px
+    }
+  }
+
+  .swal-icon--info {
+    border-color: #c9dae1
+  }
+
+  .swal-icon--info:before {
+    width: 5px;
+    height: 29px;
+    bottom: 17px;
+    border-radius: 2px;
+    margin-left: -2px
+  }
+
+  .swal-icon--info:after, .swal-icon--info:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    background-color: #c9dae1
+  }
+
+  .swal-icon--info:after {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin-left: -3px;
+    top: 19px
+  }
+
+  .swal-icon {
+    width: 80px;
+    height: 80px;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 50%;
+    padding: 0;
+    position: relative;
+    box-sizing: content-box;
+    margin: 20px auto
+  }
+
+  .swal-icon:first-child {
+    margin-top: 32px
+  }
+
+  .swal-icon--custom {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0
+  }
+
+  .swal-icon img {
+    max-width: 100%;
+    max-height: 100%
+  }
+
+  .swal-title {
+    color: rgba(0, 0, 0, .65);
+    font-weight: 600;
+    text-transform: none;
+    position: relative;
+    display: block;
+    padding: 13px 16px;
+    font-size: 27px;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 0
+  }
+
+  .swal-title:first-child {
+    margin-top: 26px
+  }
+
+  .swal-title:not(:first-child) {
+    padding-bottom: 0
+  }
+
+  .swal-title:not(:last-child) {
+    margin-bottom: 13px
+  }
+
+  .swal-text {
+    font-size: 16px;
+    position: relative;
+    float: none;
+    line-height: normal;
+    vertical-align: top;
+    text-align: left;
+    display: inline-block;
+    margin: 0;
+    padding: 0 10px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .64);
+    max-width: calc(100% - 20px);
+    overflow-wrap: break-word;
+    box-sizing: border-box
+  }
+
+  .swal-text:first-child {
+    margin-top: 45px
+  }
+
+  .swal-text:last-child {
+    margin-bottom: 45px
+  }
+
+  .swal-footer {
+    text-align: right;
+    padding-top: 13px;
+    margin-top: 13px;
+    padding: 13px 16px;
+    border-radius: inherit;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0
+  }
+
+  .swal-button-container {
+    margin: 5px;
+    display: inline-block;
+    position: relative
+  }
+
+  .swal-button {
+    background-color: #7cd1f9;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 24px;
+    margin: 0;
+    cursor: pointer
+  }
+
+  .swal-button[not:disabled
+
+  ]
+  :hover {
+    background-color: #78cbf2
+  }
+
+  .swal-button:active {
+    background-color: #70bce0
+  }
+
+  .swal-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(43, 114, 165, .29)
+  }
+
+  .swal-button[disabled] {
+    opacity: .5;
+    cursor: default
+  }
+
+  .swal-button::-moz-focus-inner {
+    border: 0
+  }
+
+  .swal-button--cancel {
+    color: #555;
+    background-color: #efefef
+  }
+
+  .swal-button--cancel[not:disabled
+
+  ]
+  :hover {
+    background-color: #e8e8e8
+  }
+
+  .swal-button--cancel:active {
+    background-color: #d7d7d7
+  }
+
+  .swal-button--cancel:focus {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(116, 136, 150, .29)
+  }
+
+  .swal-button--danger {
+    background-color: #e64942
+  }
+
+  .swal-button--danger[not:disabled
+
+  ]
+  :hover {
+    background-color: #df4740
+  }
+
+  .swal-button--danger:active {
+    background-color: #cf423b
+  }
+
+  .swal-button--danger:focus {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(165, 43, 43, .29)
+  }
+
+  .swal-content {
+    padding: 0 20px;
+    margin-top: 20px;
+    font-size: medium
+  }
+
+  .swal-content:last-child {
+    margin-bottom: 20px
+  }
+
+  .swal-content__input, .swal-content__textarea {
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: none;
+    font-size: 14px;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, .14);
+    padding: 10px 13px;
+    border-radius: 2px;
+    transition: border-color .2s
+  }
+
+  .swal-content__input:focus, .swal-content__textarea:focus {
+    outline: none;
+    border-color: #6db8ff
+  }
+
+  .swal-content__textarea {
+    resize: vertical
+  }
+
+  .swal-button--loading {
+    color: transparent
+  }
+
+  .swal-button--loading ~ .swal-button__loader {
+    opacity: 1
+  }
+
+  .swal-button__loader {
+    position: absolute;
+    height: auto;
+    width: 43px;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    pointer-events: none;
+    opacity: 0
+  }
+
+  .swal-button__loader div {
+    display: inline-block;
+    float: none;
+    vertical-align: baseline;
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    border: none;
+    margin: 2px;
+    opacity: .4;
+    border-radius: 7px;
+    background-color: hsla(0, 0%, 100%, .9);
+    transition: background .2s;
+    -webkit-animation: swal-loading-anim 1s infinite;
+    animation: swal-loading-anim 1s infinite
+  }
+
+  .swal-button__loader div:nth-child(3n+2) {
+    -webkit-animation-delay: .15s;
+    animation-delay: .15s
+  }
+
+  .swal-button__loader div:nth-child(3n+3) {
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s
+  }
+
+  @-webkit-keyframes swal-loading-anim {
+    0% {
+      opacity: .4
+    }
+    20% {
+      opacity: .4
+    }
+    50% {
+      opacity: 1
+    }
+    to {
+      opacity: .4
+    }
+  }
+
+  @keyframes swal-loading-anim {
+    0% {
+      opacity: .4
+    }
+    20% {
+      opacity: .4
+    }
+    50% {
+      opacity: 1
+    }
+    to {
+      opacity: .4
+    }
+  }
+
+  .swal-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 0;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 10000;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .3s
+  }
+
+  .swal-overlay:before {
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%
+  }
+
+  .swal-overlay--show-modal {
+    opacity: 1;
+    pointer-events: auto
+  }
+
+  .swal-overlay--show-modal .swal-modal {
+    opacity: 1;
+    pointer-events: auto;
+    box-sizing: border-box;
+    -webkit-animation: showSweetAlert .3s;
+    animation: showSweetAlert .3s;
+    will-change: transform
+  }
+
+  .swal-modal {
+    width: 478px;
+    opacity: 0;
+    pointer-events: none;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    position: static;
+    margin: 20px auto;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    z-index: 10001;
+    transition: opacity .2s, -webkit-transform .3s;
+    transition: transform .3s, opacity .2s;
+    transition: transform .3s, opacity .2s, -webkit-transform .3s
+  }
+
+  @media (max-width: 500px) {
+    .swal-modal {
+      width: calc(100% - 20px)
+    }
+  }
+
+  @-webkit-keyframes showSweetAlert {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1)
+    }
+    1% {
+      -webkit-transform: scale(.5);
+      transform: scale(.5)
+    }
+    45% {
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05)
+    }
+    80% {
+      -webkit-transform: scale(.95);
+      transform: scale(.95)
+    }
+    to {
+      -webkit-transform: scale(1);
+      transform: scale(1)
+    }
+  }
+
+  @keyframes showSweetAlert {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1)
+    }
+    1% {
+      -webkit-transform: scale(.5);
+      transform: scale(.5)
+    }
+    45% {
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05)
+    }
+    80% {
+      -webkit-transform: scale(.95);
+      transform: scale(.95)
+    }
+    to {
+      -webkit-transform: scale(1);
+      transform: scale(1)
+    }
+  }</style>
+  <title>Share Treats</title>
+
+
+  <meta id="extViewportMeta" name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta id="metaType" property="og:type" content="website">
+  <meta id="metaTitle" name="title" property="og:title" content="SHARE TREATS">
+  <meta id="metaSubject" name="subject" content="SHARE TREATS">
+  <meta id="metaUrl" property="og:url" content="https://www.sharetreats.ph">
+  <meta id="metaDescription" name="description" property="og:description" content="">
+  <meta id="metaImage" property="og:image" content="/images/icons/sharetlogo.png">
+  <meta name="copyright" content="Copyright SHARE TREATS 2016. All Rights Reserved.">
+
+  <link href="https://stg.sharetreats.ph/images/icons/favicon.ico" rel="shortcut icon">
+
+  <!-- Bootstrap core CSS -->
+  <link href="./Share Treats_files/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="./Share Treats_files/iosOverlay.css" rel="stylesheet" type="text/css">
+  <link href="./Share Treats_files/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css">
+  <link href="./Share Treats_files/bootstrap-dialog.css" rel="stylesheet" type="text/css">
+  <link href="./Share Treats_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="./Share Treats_files/css.css" rel="stylesheet">
+
+
+  <!-- JavaScript -->
+  <script type="text/javascript" async="" src="./Share Treats_files/analytics.js"></script>
+  <script type="text/javascript" async="" src="./Share Treats_files/recaptcha__en.js"></script>
+  <script async="" src="./Share Treats_files/gtm.js"></script>
+  <script async="" src="./Share Treats_files/analytics.js"></script>
+  <script type="text/javascript" src="./Share Treats_files/jquery.js"></script>
+  <script type="text/javascript" src="./Share Treats_files/jQueryRotate.js"></script>
+  <script type="text/javascript" src="./Share Treats_files/popper.js"></script>
+  <script type="text/javascript" src="./Share Treats_files/jquery.cookie.js"></script>
+  <script type="text/javascript" src="./Share Treats_files/numeral.min.js"></script>
+  <script type="text/javascript" src="./Share Treats_files/moment.js"></script>
+
+  <script type="text/javascript" src="./Share Treats_files/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./Share Treats_files/iosOverlay.js"></script>
+  <script type="text/javascript" src="./Share Treats_files/spin.min.js"></script>
+  <style type="text/css"></style>
+  <script type="text/javascript" src="./Share Treats_files/bootstrap-datepicker.min.js"></script>
+  <script type="text/javascript" src="./Share Treats_files/bootstrap-dialog.js"></script>
+  <script type="text/javascript" src="./Share Treats_files/mobile-detect.min.js"></script>
+  <script type="text/javascript" src="./Share Treats_files/uuid-random.min.js"></script>
+
+  <script type="text/javascript" src="./Share Treats_files/handlebars-v4.0.11.js"></script>
+  <script type="text/javascript" src="./Share Treats_files/utility.js"></script>
+  <script type="text/javascript" src="./Share Treats_files/api.js" async="" defer=""></script>
+
+  <script>
+    $(document).ready(function () {
+    });
+  </script>
+  <link href="./Share Treats_files/installment_overlay.css" rel="stylesheet" type="text/css">
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script',
+      'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-64000056-3', 'auto');
+    ga('send', 'pageview');
+
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+        var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      }
+    )(window, document, 'script', 'dataLayer', 'GTM-MGLWFHX');
+  </script>
+  <!--add-->
+  <link rel="stylesheet" href="./Share Treats_files/add/add.css">
+</head>
+<body class="">
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGLWFHX" height="0" width="0"
+          style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="./Share Treats_files/bootstrap.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="./Share Treats_files/font-awesome.min(1).css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="./Share Treats_files/themify-icons.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="./Share Treats_files/icon-font.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="./Share Treats_files/style.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="./Share Treats_files/animate.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="./Share Treats_files/hamburgers.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="./Share Treats_files/animsition.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="./Share Treats_files/select2.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="./Share Treats_files/daterangepicker.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="./Share Treats_files/slick.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="./Share Treats_files/lightbox.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="./Share Treats_files/util.css">
+<link rel="stylesheet" type="text/css" href="./Share Treats_files/main.css">
+<!--===============================================================================================-->
+<link href="./Share Treats_files/css(1).css" rel="stylesheet">
+<link href="./Share Treats_files/css(2).css" rel="stylesheet">
+<link href="./Share Treats_files/css(3).css" rel="stylesheet">
+<link href="./Share Treats_files/css(4).css" rel="stylesheet">
+<link href="./Share Treats_files/css(5).css" rel="stylesheet">
+<link href="./Share Treats_files/css(6).css" rel="stylesheet">
+<!--===============================================================================================-->
+
+<script type="text/javascript" src="./Share Treats_files/common-api.js"></script>
+<script type="text/javascript" src="./Share Treats_files/transient.js"></script>
+
+<script>
+  // When Success login only from Android.
+  function facebook_login_android_success(jsResponse) {
+    var opt = {'referrer': $(location).attr('href')};
+    // jsResponse should convert to JSONObject array. : Facebook Response.
+    var jsFbResp = JSON.parse(jsResponse);
+    fb_signin(jsFbResp, opt);
+  }
+
+  function facebook_login_android_failOrCancel() {
+    //func_login_finish();
+  }
+
+  function facebook_login_web(opt) {
+    FB.login(function (response) {
+        if (response.authResponse) {
+          fb_signin(response, opt);
+        } else {
+          console.log(FB);
+        }
+      }, {scope: 'public_profile,email'}
+    );
+
+  }
+
+  function fb_signin(fb_resp, opt) {
+    // Assign handlers immediately after making the request,
+    // and remember the jqxhr object for this request
+    var loginPost = $.post("/sign/sign_in",
+      {
+        'platform': 'FB',
+        'params': fb_resp,
+        'referrer': opt['referrer'] === undefined ? '' : opt['referrer']
+      });
+
+    loginPost.done(function (data) {
+      console.log(data)
+      var dt = data;
+      if (dt == undefined) return;
+      var sign = dt['sign'];
+      if (sign == undefined) return;
+      var rslt = sign['result'];
+      var uid = sign['userId'];
+
+      if (rslt == 'SIGN_IN_EXIST_ACCOUNT' || rslt == 'SIGN_IN_WITH_CREATE_ACCOUNT') {
+
+        if (rslt == 'SIGN_IN_WITH_CREATE_ACCOUNT') {
+          //Criteo OneTag - User sign-up
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({'event': 'Signup Complete', 'userId': uid});
+        }
+
+        //Android APP PUSH token update
+        if (window && window.pasatreatAndroid && window.pasatreatAndroid.getFCMToken) {
+          //alert('fcmTkn');
+          var fcmTkn = window.pasatreatAndroid.getFCMToken();
+          console.log('uid' + uid);
+          console.log('fcn' + fcmTkn);
+
+          var data = {user_id: uid, token: fcmTkn}; //Array
+          /*
+					var registPushToken = $.post( "/account/register_push_token.do",
+							{
+								'params' : data
+							});
+
+					registPushToken.done(function(d) {
+						console.log('push token success ');
+					});
+					registPushToken.fail(function(d) {
+						console.log('push token fail ');
+					});
+					*/
+        }
+
+        if (window && window.pasatreatAndroid && window.pasatreatAndroid.setupProfile) {
+          var setup_pm = JSON.stringify(sign);
+          window.pasatreatAndroid.setupProfile(setup_pm);
+        }
+
+
+        var _callback_post = function () {
+          var _r_uri = dt['redirect_uri'];
+          if (_r_uri !== undefined) {
+            location.href = _r_uri;
+          }
+        };
+
+        _callback_post();
+
+        /* var _r_uri = dt['redirect_uri'];
+				if( _r_uri !== undefined ){
+					location.href = _r_uri;
+				} */
+      } else {
+        alert("Error on Sign in/on");
+      }
+    });
+    loginPost.fail(function () {
+      alert("Error on Sign in/on");
+    });
+    loginPost.always(function () {
+    });
+  }
+
+  function site_signout() {
+    var do_signout = function () {
+
+      location.href = '/sign/sign_out';
+
+    };
+    do_signout();
+  }
+
+  function fnLoginCheckUrl(callBackUrl) {
+    var login = "{userNo=2320, userId=77ff4a5b-7abe-417b-a404-cfd4f1e942c3, userName=Joseph , mdn=09451901540, mileage=0, stamp=2020-05-06 16:39:15.0, userIdEnc=77ff4a5b-7abe-417b-a404-cfd4f1e942c3, email=joseph@sharetreats.com, domain=003, instDt=20200227, instTm=163034, uptDt=20200227, uptTm=163034, pwd=null, userPwdEnc=null, icpassport=null, no=2320, id=77ff4a5b-7abe-417b-a404-cfd4f1e942c3, name=Joseph }";
+
+    if (isEmpty(login)) {
+      faceBookSignIn(callBackUrl);
+    } else {
+      location.href = callBackUrl;
+    }
+  }
+
+  function faceBookSignIn(currentUri) {
+    if (isEmpty(currentUri)) {
+      currentUri = location.href;
+    }
+
+    if (currentUri.indexOf(HOST_DOMAIN) < 0) {
+      currentUri = HOST_DOMAIN + currentUri;
+    }
+
+    uri = "/sign/faceBookSignIn?referrer_uri=" + encodeURIComponent(currentUri);
+
+    if (fnJudgeApp()) {
+      //location.href = uri;
+
+      var opt = {'referrer': currentUri};
+      var login_param = JSON.stringify(opt);
+      window.pasatreatAndroid.facebook_login_app(login_param);
+
+    } else {
+      fnPopupWindow(uri);
+    }
+  }
+
+</script>
+<!-- Header -->
+<header class="header1 fixed-header">
+  <!-- App download -->
+  <div id="advisory" class="hidden">
+    <div class="hidden-lg hidden-sm hidden-md col-12 mx-auto" style="padding: 0px;">
+      <p style="background-image: url(/images/app_download.jpg); height: 83px; background-size: cover;"><span
+        class="pull-right p-r-10 fs-16" id="close"><strong>x</strong></span>
+        <span><input type="submit" name="install" id="install" value="Install" class="col-3 pull-right"></span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Header desktop -->
+  <div class="container-menu-header" style="top: 0px;">
+    <div class="topbar">
+      <div class="topbar-social">
+        <a href="https://stg.sharetreats.ph/payment/paymentConsent#" class="topbar-social-item fa fa-facebook"></a>
+        <a href="https://stg.sharetreats.ph/payment/paymentConsent#" class="topbar-social-item fa fa-instagram"></a>
+      </div>
+
+      <span class="topbar-child1"> Globe Load Payment is now available! </span>
+
+
+      <div class="topbar-child2"></div>
+
+    </div>
+
+    <div class="wrap_header">
+      <!-- Logo -->
+      <a href="https://stg.sharetreats.ph/" class="logo">
+        <img src="./Share Treats_files/Share-treats-Logo-for-website.png" alt="IMG-LOGO">
+      </a>
+
+      <!-- Menu -->
+      <div class="wrap_menu">
+        <nav class="menu">
+          <ul class="main_menu">
+            <li class="item-02nu-mobile"><a href="https://stg.sharetreats.ph/howItWorks">How It Works</a></li>
+
+            <li><a href="https://stg.sharetreats.ph/shop/category/list">Categories</a></li>
+
+            <li><a href="https://stg.sharetreats.ph/partners">Brands</a></li>
+
+            <li class="item-02nu-mobile"><a href="https://www.biztreats.ph/" target="_blank"
+                                            style="color: #103c87; text-transform: capitalize;">
+              <span style="font-size: 12px; vertical-align: middle;">For</span>
+              <span style="font-size: 16px;">Corporate</span>
+            </a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Header Icon -->
+      <div class="header-icons">
+
+
+
+						<span class="topbar-email header-wheel" style="">
+							<a href="https://stg.sharetreats.ph/membership/signInEvent" class="BtnLoginNPlay"><img
+                src="./Share Treats_files/luckywheel_V2.png" class="img-fluid" width="50px"></a>
+						</span>
+
+        <span class="linedivide1"></span>
+
+        <span class="topbar-email">
+							<a href="https://stg.sharetreats.ph/myAccount/myProfile">My Profile</a>
+						</span>
+
+        <span class="linedivide1"></span>
+
+        <span class="topbar-email">
+							<a href="https://stg.sharetreats.ph/payment/paymentConsent#" onclick="site_signout(); return false;">Logout</a>
+						</span>
+
+        <span class="linedivide1"></span>
+        <div class="header-wrapicon2">
+          <img src="./Share Treats_files/notif.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
+          <span class="header-icons-noti notice_size">0</span>
+
+          <!-- Header cart noti -->
+          <div class="header-notif header-dropdown">
+            <ul class="header-notif-wrapitem">
+              <script id="header_notice_list" type="text/template">
+                {{#notice_list}}
+                <li class="header-notif-item">
+                  <div class="header-notif-item-txt">
+                    <a href="/myAccount/notice" class="header-notif-item-name"> {{title}} </a>
+
+                    <span class="header-notif-item-info datetime">{{regDate}}</span>
+                    <hr>
+                  </div>
+                </li>
+                {{/notice_list}}
+              </script>
+            </ul>
+            <br>
+
+            <div class="header-notif-buttons">
+              <div class="header-notif-wrapbtn">
+                <!-- Button -->
+                <a href="https://stg.sharetreats.ph/myAccount/notice"
+                   class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4"> View All </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Mobile -->
+  <div class="wrap_header_mobile">
+    <!-- Logo moblie -->
+    <a href="https://stg.sharetreats.ph/" class="logo-mobile">
+      <img src="./Share Treats_files/Share-treats-Logo-for-website.png" alt="IMG-LOGO">
+    </a>
+
+    <!-- Button show menu -->
+    <div class="btn-show-menu">
+      <!-- Header Icon mobile -->
+      <span class="topbar-email header-wheel" style="">
+					<a href="https://stg.sharetreats.ph/membership/signInEvent" class="BtnLoginNPlay"><img
+            src="./Share Treats_files/luckywheel_V2.png" class="img-fluid" width="35px"></a>
+				</span>
+
+      <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+      </div>
+    </div>
+  </div>
+  <!-- Menu Mobile -->
+  <div class="wrap-side-menu">
+    <nav class="side-menu">
+      <ul class="main-menu">
+        <li class="item-02pbar-mobile p-l-10" style="background-color: #1ba3ce;">
+          <div class="topbar-social-mobile">
+            <a href="https://www.facebook.com/ShareTreatsPH/" class="topbar-social-item fa fa-facebook"
+               id="fb-mobile"></a>
+            <a href="https://www.instagram.com/sharetreats/" class="topbar-social-item fa fa-instagram"
+               id="ig-mobile"></a>
+          </div>
+
+        </li>
+
+        <li class="item-02nu-mobile"><a href="https://stg.sharetreats.ph/">Home</a> <i
+          class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i></li>
+
+        <li class="item-02nu-mobile"><a href="https://stg.sharetreats.ph/howItWorks">How It Works</a></li>
+
+        <li class="item-02nu-mobile"><a href="https://stg.sharetreats.ph/shop/category/list">Categories</a></li>
+
+        <li class="item-02nu-mobile"><a href="https://stg.sharetreats.ph/partners">Brands</a></li>
+
+        <li class="item-02nu-mobile"><a href="https://www.biztreats.ph/" target="_blank">For Corporate</a></li>
+
+
+        <li class="item-02nu-mobile"><a href="https://stg.sharetreats.ph/myAccount/myProfile">My Profile</a></li>
+
+        <li class="item-02nu-mobile">
+          <a href="https://stg.sharetreats.ph/myAccount/notice">
+            Notifications (<span class="notice_size">0</span>)
+          </a>
+        </li>
+
+        <li class="item-02nu-mobile"><a href="https://stg.sharetreats.ph/payment/paymentConsent#"
+                                        onclick="site_signout(); return false;">Logout</a></li>
+
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Back to top -->
+
+
+<div class="btn-back-to-previous bg0-hov hidden-sm hidden-md hidden-lg" id="myBtn1" style="display: flex;">
+		<span class="symbol-btn-back-to-previous">
+			<i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+		</span>
+</div>
+
+<div class="btn-back-to-top bg0-hov" id="myBtn" style="display: none;">
+		<span class="symbol-btn-back-to-top">
+			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</span>
+</div>
+
+
+<script type="text/javascript" src="./Share Treats_files/notice_service.js"></script>
+<script type="text/javascript" src="./Share Treats_files/b2c_user_event_history_service.js"></script>
+<script>
+  var AUTHENTICATION;
+
+  AUTHENTICATION = {
+    "no": "2320",
+    "id": "77ff4a5b-7abe-417b-a404-cfd4f1e942c3",
+    "loginId": "REQUIRE_TO_LOGIN",
+    "name": "Joseph ",
+    "email": "joseph@sharetreats.com",
+    "msisdn": null,
+    "domain": "003",
+    "ipAddress": 0,
+    "mileage": "0"
+  };
+
+
+  $().ready(function () {
+    header_notice_service = $.extend(true, {}, notice_service);
+
+    header_notice_service.setTodoAfterRenderInList(function (obj) {
+      fnInitUIScript(null, DT_FORMAT, PH_DATE_FORMAT);
+      $('.notice_size').text(obj.notice_list.length);
+    });
+
+    header_notice_service.renderInList(HEADER_NOTICE_LIST, "header_notice_list");
+
+    b2c_user_event_history_service.list(null, "lucky_wheel_entries", null, false, "/getLuckyWheelEntries");
+
+    b2c_user_event_history_service.setTodoAfterRenderInList(function (obj) {
+      if (!isEmpty(obj)) {
+        var entries = obj.entries;
+
+        headerWheel("show");
+
+        if (entries > 0) {
+          $("#entries").text(entries);
+          PopUp("show");
+          //headerWheel("show");
+
+        } else if (entries == 0) {
+          if (isEmpty(AUTHENTICATION)) {
+            //Not login
+            $("#entries").text("2");
+            PopUp("show");
+            //headerWheel("show");
+          } else {
+            //No entry remains
+            PopUp("hide");
+            //headerWheel("hide");
+          }
+
+        } else if (entries < 0) {
+          //No available event found
+          PopUp("hide");
+          headerWheel("hide");
+        }
+      }
+    });
+
+
+    if (isEmpty(AUTHENTICATION)) {
+      //Not login
+      $(".BtnLoginNPlay").attr("href", "#").click(function () {
+        faceBookSignIn("/membership/signInEvent");
+        return false;
+      });
+
+    } else {
+      $(".BtnLoginNPlay").attr("href", "/membership/signInEvent");
+    }
+
+  });
+
+  function fnMenuChange(value) {
+
+    switch (value) {
+
+      case 'myProfile':
+        location.href = '/myAccount/myProfile';
+        break;
+      case 'myPoints':
+        location.href = '/myAccount/myPoints';
+        break;
+      case 'myTreats':
+        location.href = '/myAccount/treatsSent';
+        break;
+      case 'scheduled':
+        location.href = '/myAccount/treatsScheduled';
+        break;
+      case 'logOut':
+        site_signout();
+        break;
+    }
+
+  }
+
+  function PopUp(hideOrshow) {
+    if (hideOrshow == 'hide') {
+      $('#ac-wrapper').attr("style", "display:none");
+    } else {
+      $('#ac-wrapper').attr("style", "");
+    }
+  }
+
+  function headerWheel(hideOrshow) {
+    if (hideOrshow == 'hide') {
+      $('.header-wheel').attr("style", "display:none");
+    } else {
+      $('.header-wheel').attr("style", "");
+    }
+  }
+</script>
+
+<script>
+  var is_android = /android/i.test(navigator.userAgent);
+  var is_ios = /iP(hone|od|ad)/i.test(navigator.userAgent);
+
+  var APP_BANNER_USE = "true";
+  var IOS_DOWNLOAD = "https://itunes.apple.com/us/app/globe-share-treats/id1223502489?ls=1&mt=8";
+  var ANDROID_DOWNLOAD = "https://play.google.com/store/apps/details?id=com.am.php.sharetreats";
+
+  var cookieUtil = function (k, v) {
+    var util = {
+      'write': function (name, value) {
+        var date, expires;
+        date = new Date();
+        date.setTime(date.getTime() + (24 * 60 * 60 * 1000));// 1 day
+        expires = "; expires=" + date.toGMTString();
+        document.cookie = name + "=" + value + expires + "; path=/";
+      },
+      'read': function (name) {
+        var i, c, ca, nameEQ = name + "=";
+        ca = document.cookie.split(';');
+
+        for (i = 0; i < ca.length; i++) {
+          c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1, c.length);
+          }
+          if (c.indexOf(nameEQ) == 0) {
+            return c.substring(nameEQ.length, c.length);
+          }
+        }
+        return 0;
+      }
+    };
+
+    if (typeof v !== 'undefined') {
+      util.write(k, v);
+    } else {
+      return util.read(k);
+    }
+  };
+  var ck_key = 'sharetreats_app_banner';
+
+  function disableBanner() {
+    var IsApp = fnJudgeApp();
+    var appBannerCookie = cookieUtil(ck_key);
+
+    if (appBannerCookie != 1 && !IsApp && (is_android || is_ios)) {
+
+      if (APP_BANNER_USE == "true") {
+        $("#advisory").removeClass("hidden");
+
+        $("#close").click(function () {
+          $("#advisory").addClass("hidden");
+          cookieUtil(ck_key, 1);
+        });
+
+        $("#install").click(function () {
+          $("#advisory").addClass("hidden");
+          cookieUtil(ck_key, 1);
+
+          if (is_android) {
+            window.open(ANDROID_DOWNLOAD, '_blank');
+          } else {
+            window.open(IOS_DOWNLOAD, '_blank');
+          }
+        });
+
+      }
+    }
+  }
+
+  $(document).ready(function () {
+    Request();
+
+    var nowUri = uri_string();
+
+    if (nowUri == "/welcome") {
+      if (is_android) {
+        disableBanner();
+      } else {
+        //disableBanner();
+        setTimeout("disableBanner()", 3000);
+      }
+    }
+  });
+</script>
+
+
+<!-- step1 -->
+<section class="steps" id="step1">
+  <form onsubmit="fnTreats(); return false;" action="https://stg.sharetreats.ph/payment/paymentConsent">
+    <div class="container p-t-35 p-b-80">
+      <div class="row">
+        <div class="col-lg-1 hidden-md hidden-sm hidden-xs"></div>
+        <div class="w-size13 p-t-30 col-lg-5 col-md-4 col-sm-5 col-11 t-center mx-auto">
+          <div class="block2">
+
+
+            <div class="shareGoods">
+              <div class="block2-img of-hidden pos-relative mx-auto co-size" id="cms_sticker_info_list">
+                <img src="./Share Treats_files/bb5edbc1-a203-46b9-b1bd-c64f6ccc4a92.jpg" alt="IMG-PRODUCT"
+                     class="co-size">
+              </div>
+              <script id="cms_sticker_info_list" type="text/template">
+                {{^cms_sticker_info_list}}
+                <div class="block2-img of-hidden pos-relative mx-auto co-size">
+                  <img src="/images/item-02.jpg" alt="IMG-PRODUCT" class="co-size">
+                </div>
+                {{/cms_sticker_info_list}}
+                {{#cms_sticker_info_list}}
+                <div class="block2-img of-hidden pos-relative mx-auto co-size">
+                  <img src="{{stickerUrl}}" alt="IMG-PRODUCT" class="co-size">
+                </div>
+                {{/cms_sticker_info_list}}
+              </script>
+            </div>
+
+            <div class="block2-txt p-t-20 t-center">
+              <div class="block2-txt p-t-20 t-center">
+                <div class="shareGoods"><p id="cms_sticker_info_list"><span class="header-color"></span><br></p>
+                  <script id="cms_sticker_info_list" type="text/template">
+                    {{^cms_sticker_info_list}}
+                    <p><span class="header-color">You're stronger than you know!</span><br>
+                      {{/cms_sticker_info_list}}
+                      {{#cms_sticker_info_list}}
+                    <p><span class="header-color">{{greetingMsg}}</span><br>
+                      {{/cms_sticker_info_list}}
+                  </script>
+                </div>
+
+                <div><span class="fs-11 ps-color t-middle" id="cms_goods_disp_detail">w/FREE</span> BROWNIES UNLTD<br
+                  id="cms_goods_disp_detail">
+                  Fun Brownies<p id="cms_goods_disp_detail"></p>
+                  <script id="cms_goods_disp_detail" type="text/template">
+                    {{#cms_goods_disp_detail}}
+                    <span class="fs-11 ps-color t-middle">w/FREE</span> {{goodsComName}}<br>
+                    {{goodsName}}</p>
+                    {{/cms_goods_disp_detail}}
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="col-11 hidden-sm hidden-md hidden-lg">
+
+        <div class="p-t-30 col-lg-5 col-md-6 col-sm-5 col-11 mx-auto">
+          <div class="tab01 t-left">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs mx-auto" role="tablist" style="justify-content: left">
+              <a class="nav-item treat-a-friend" id="tme-tab">
+                <li class="nav-link2" data-toggle="tab" href="#treat-me" role="tab" onclick="fnChangeSendTarget(1);">
+                  Treat for me
+                </li>
+              </a>
+              <a class="nav-item t-active" id="tfriend-tab">
+                <li class="nav-link2 active" data-toggle="tab" href="#treat-friend" role="tab"
+                    onclick="fnChangeSendTarget(0);">Treat for a friend
+                </li>
+              </a>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <!-- - -->
+              <div class="tab-pane fade show active" id="treat-friend" role="tabpanel">
+                <p class="s-text12">Recipient</p>
+                <hr class="col-lg-10 col-md-10 col-sm-11 col-11 hr-zero">
+                <div class="row" id="treat-form">
+                  <div class="col-lg-6">
+                    <input type="text" name="resCustName" id="rname" placeholder="Name (max 7 letters)" maxlength="7"
+                           required="">
+                  </div>
+                  <div class="col-lg-5">
+                    <input type="text" name="resCustPhoneNo" id="mobileno" style="IME-MODE: disabled;"
+                           onkeypress="if ((event.keyCode&lt;48) || (event.keyCode&gt;57)) event.returnValue=false;"
+                           placeholder="Phone # (0917xxxxxxx)" maxlength="12" required="">
+                  </div>
+                </div>
+
+                <div class="row m-l-1" id="treat-form2">
+                  <input type="checkbox" name="scheduled" id="scheduled" class="m-t-5 m-r-5"> <span id="s">Schedule Sending</span>
+                </div>
+
+                <div class="row hide-sched" id="sched-form">
+                  <div class="col-12 col-sm-8 col-md-8 col-lg-7">
+                    <input type="date" name="resDate" id="sched_day" max="3000-12-31" min="2020-06-30"
+                           class="form-control" placeholder="Day">
+                  </div>
+                  <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                    <input type="time" name="resTime" id="sched_time" class="form-control" placeholder="Day">
+                  </div>
+                </div>
+              </div>
+
+              <!-- - -->
+              <div class="tab-pane fade" id="treat-me" role="tabpanel"></div>
+
+            </div>
+          </div>
+
+          <p class="s-text12 m-t-20">Your Info</p>
+          <hr class="col-lg-10 col-md-10 col-sm-11 col-11 hr-zero">
+          <div class="row">
+            <div class="col-lg-6">
+              <input type="text" name="senderName" id="your-name" placeholder="Name (max 7 letters)" maxlength="7"
+                     required="">
+            </div>
+            <div class="col-lg-5">
+              <input type="text" name="senderPhone" id="your-mobileno" style="IME-MODE: disabled;"
+                     onkeypress="if ((event.keyCode&lt;48) || (event.keyCode&gt;57)) event.returnValue=false;"
+                     placeholder="Phone # (0917xxxxxxx)" maxlength="12" required="">
+            </div>
+          </div>
+
+          <p class="s-text12 m-t-20" id="message-title">Message
+          </p>
+          <hr class="col-lg-10 col-md-10 col-sm-11 col-11 hr-zero">
+          <p></p>
+          <div id="your-message"><textarea name="mmsSendMsg" id="cms_sticker_info_list" placeholder="Message" rows="2"
+                                           maxlength="45" required=""></textarea>
+            <script id="cms_sticker_info_list" type="text/template">
+              {{^cms_sticker_info_list}}
+              <textarea name="mmsSendMsg" id="mmsSendMsg" placeholder="Message" rows="2" maxlength="45"
+                        required></textarea>
+              {{/cms_sticker_info_list}}
+              {{#cms_sticker_info_list}}
+              <textarea name="mmsSendMsg" id="mmsSendMsg" placeholder="Message" rows="2" maxlength="45" required>{{greetingMsg}}</textarea>
+              {{/cms_sticker_info_list}}
+            </script>
+          </div>
+          <p id="char_namb" class="char-counter">0/45</p>
+
+          <div>
+            <br> <br>
+
+            <p class="s-text12">Payment Options</p>
+            <hr class="col-lg-10 col-md-10 col-sm-11 col-11 hr-zero">
+
+            <div class="pos-relative">
+              <div
+                class="warning-text-PGC01 col-lg-11 col-md-10 col-sm-11 col-12 bgblack bo16 bo-rad-5 p-b-10 pmethod-margin pos-absolute dis-none"
+                id="cms_goods_disp_pg_price_list">
+                <div class="s-text5 text-white ab-c-m w-75">
+                  <span class="lnr lnr-warning w-100"></span>&nbsp;GCash is not available in Internet Explorer
+                </div>
+              </div>
+              <div class="col-lg-11 col-md-10 col-sm-11 col-12 bo16 bo-rad-5 p-b-10 pmethod-margin"
+                   id="cms_goods_disp_pg_price_list">
+                <img src="./Share Treats_files/globe.png" alt="" class="img-fluid p-t-5" width="100px">
+                <input type="hidden" id="pgChannel" value="PGC01">
+                <input type="hidden" id="payMethod" value="1">
+                <input type="hidden" id="earnMileage" value="0">
+                <input type="hidden" id="saleTot" value="1">
+                <input type="hidden" id="planId" value="">
+                <span class="pull-right text-right p-t-23 s-text5 header-color">
+										<strike class="m-r-5 text-gray fs-12 t-middle"></strike>Php
+									1
+									<span class="text-gray fs-12 t-middle text-right"></span>
+									</span>
+              </div>
+              <div
+                class="warning-text-PGC03 col-lg-11 col-md-10 col-sm-11 col-12 bgblack bo16 bo-rad-5 p-b-10 pmethod-margin pos-absolute dis-none"
+                id="cms_goods_disp_pg_price_list">
+                <div class="s-text5 text-white ab-c-m w-75">
+                  <span class="lnr lnr-warning w-100"></span>&nbsp;GCash is not available in Internet Explorer
+                </div>
+              </div>
+              <div class="col-lg-11 col-md-10 col-sm-11 col-12 bo16 bo-rad-5 p-b-10 pmethod-margin"
+                   id="cms_goods_disp_pg_price_list">
+                <img src="./Share Treats_files/smart.png" alt="" class="img-fluid p-t-5" width="100px">
+                <input type="hidden" id="pgChannel" value="PGC03">
+                <input type="hidden" id="payMethod" value="1">
+                <input type="hidden" id="earnMileage" value="0">
+                <input type="hidden" id="saleTot" value="1">
+                <input type="hidden" id="planId" value="">
+                <span class="pull-right text-right p-t-23 s-text5 header-color">
+										<strike class="m-r-5 text-gray fs-12 t-middle"></strike>Php
+									1
+									<span class="text-gray fs-12 t-middle text-right"></span>
+									</span>
+              </div>
+              <div
+                class="warning-text-PGC12 col-lg-11 col-md-10 col-sm-11 col-12 bgblack bo16 bo-rad-5 p-b-10 pmethod-margin pos-absolute dis-none"
+                id="cms_goods_disp_pg_price_list">
+                <div class="s-text5 text-white ab-c-m w-75">
+                  <span class="lnr lnr-warning w-100"></span>&nbsp;GCash is not available in Internet Explorer
+                </div>
+              </div>
+              <div class="col-lg-11 col-md-10 col-sm-11 col-12 bo16 bo-rad-5 p-b-10 pmethod-margin"
+                   id="cms_goods_disp_pg_price_list">
+                <img src="./Share Treats_files/dd9cc613-4ca0-4590-994c-bf784b04201a.png" alt="" class="img-fluid p-t-5"
+                     width="100px">
+                <input type="hidden" id="pgChannel" value="PGC12">
+                <input type="hidden" id="payMethod" value="7">
+                <input type="hidden" id="earnMileage" value="0">
+                <input type="hidden" id="saleTot" value="1">
+                <input type="hidden" id="planId" value="">
+                <span class="pull-right text-right p-t-23 s-text5 header-color">
+										<strike class="m-r-5 text-gray fs-12 t-middle"></strike>Php
+									1
+									<span class="text-gray fs-12 t-middle text-right"></span>
+									</span>
+              </div>
+              <div
+                class="warning-text-PGC06 col-lg-11 col-md-10 col-sm-11 col-12 bgblack bo16 bo-rad-5 p-b-10 pmethod-margin pos-absolute dis-none"
+                id="cms_goods_disp_pg_price_list">
+                <div class="s-text5 text-white ab-c-m w-75">
+                  <span class="lnr lnr-warning w-100"></span>&nbsp;GCash is not available in Internet Explorer
+                </div>
+              </div>
+              <div class="col-lg-11 col-md-10 col-sm-11 col-12 bo16 bo-rad-5 p-b-10 pmethod-margin"
+                   id="cms_goods_disp_pg_price_list">
+                <img src="./Share Treats_files/creditdebit.png" alt="" class="img-fluid p-t-5" width="100px">
+                <input type="hidden" id="pgChannel" value="PGC06">
+                <input type="hidden" id="payMethod" value="7">
+                <input type="hidden" id="earnMileage" value="0">
+                <input type="hidden" id="saleTot" value="1">
+                <input type="hidden" id="planId" value="">
+                <span class="pull-right text-right p-t-23 s-text5 header-color">
+										<strike class="m-r-5 text-gray fs-12 t-middle"></strike>Php
+									1
+									<span class="text-gray fs-12 t-middle text-right"></span>
+									</span>
+              </div>
+              <div
+                class="warning-text-PGC13 col-lg-11 col-md-10 col-sm-11 col-12 bgblack bo16 bo-rad-5 p-b-10 pmethod-margin pos-absolute dis-none"
+                id="cms_goods_disp_pg_price_list">
+                <div class="s-text5 text-white ab-c-m w-75">
+                  <span class="lnr lnr-warning w-100"></span>&nbsp;GCash is not available in Internet Explorer
+                </div>
+              </div>
+              <div class="col-lg-11 col-md-10 col-sm-11 col-12 bo16 bo-rad-5 p-b-10 pmethod-margin"
+                   id="cms_goods_disp_pg_price_list">
+                <img src="./Share Treats_files/paymaya.png" alt="" class="img-fluid p-t-5" width="100px">
+                <input type="hidden" id="pgChannel" value="PGC13">
+                <input type="hidden" id="payMethod" value="7">
+                <input type="hidden" id="earnMileage" value="0">
+                <input type="hidden" id="saleTot" value="1">
+                <input type="hidden" id="planId" value="">
+                <span class="pull-right text-right p-t-23 s-text5 header-color">
+										<strike class="m-r-5 text-gray fs-12 t-middle"></strike>Php
+									1
+									<span class="text-gray fs-12 t-middle text-right"></span>
+									</span>
+              </div>
+              <div
+                class="warning-text-PGC14 col-lg-11 col-md-10 col-sm-11 col-12 bgblack bo16 bo-rad-5 p-b-10 pmethod-margin pos-absolute dis-none"
+                id="cms_goods_disp_pg_price_list">
+                <div class="s-text5 text-white ab-c-m w-75">
+                  <span class="lnr lnr-warning w-100"></span>&nbsp;GCash is not available in Internet Explorer
+                </div>
+              </div>
+              <div class="col-lg-11 col-md-10 col-sm-11 col-12 bo16 bo-rad-5 p-b-10 pmethod-margin"
+                   id="cms_goods_disp_pg_price_list">
+                <img src="./Share Treats_files/gcashV2.png" alt="" class="img-fluid p-t-5" width="100px">
+                <input type="hidden" id="pgChannel" value="PGC14">
+                <input type="hidden" id="payMethod" value="7">
+                <input type="hidden" id="earnMileage" value="0">
+                <input type="hidden" id="saleTot" value="1">
+                <input type="hidden" id="planId" value="">
+                <span class="pull-right text-right p-t-23 s-text5 header-color">
+										<strike class="m-r-5 text-gray fs-12 t-middle"></strike>Php
+									1
+									<span class="text-gray fs-12 t-middle text-right"></span>
+									</span>
+              </div>
+              <div
+                class="warning-text-PGC05 col-lg-11 col-md-10 col-sm-11 col-12 bgblack bo16 bo-rad-5 p-b-10 pmethod-margin pos-absolute dis-none"
+                id="cms_goods_disp_pg_price_list">
+                <div class="s-text5 text-white ab-c-m w-75">
+                  <span class="lnr lnr-warning w-100"></span>&nbsp;GCash is not available in Internet Explorer
+                </div>
+              </div>
+              <div class="col-lg-11 col-md-10 col-sm-11 col-12 bo16 bo-rad-5 p-b-10 pmethod-margin"
+                   id="cms_goods_disp_pg_price_list">
+                <img src="./Share Treats_files/points.png" alt="" class="img-fluid p-t-5" width="100px">
+                <input type="hidden" id="pgChannel" value="PGC05">
+                <input type="hidden" id="payMethod" value="9">
+                <input type="hidden" id="earnMileage" value="0">
+                <input type="hidden" id="saleTot" value="100">
+                <input type="hidden" id="planId" value="">
+                <span class="pull-right text-right p-t-23 s-text5 header-color">
+										<span class="m-r-5 text-gray fs-12 t-middle">My pts: 0pts.</span>
+									100 pts.
+									<span class="text-gray fs-12 t-middle text-right"></span>
+									</span>
+              </div>
+              <div
+                class="warning-text-PGC16 col-lg-11 col-md-10 col-sm-11 col-12 bgblack bo16 bo-rad-5 p-b-10 pmethod-margin pos-absolute dis-none"
+                id="cms_goods_disp_pg_price_list">
+                <div class="s-text5 text-white ab-c-m w-75">
+                  <span class="lnr lnr-warning w-100"></span>&nbsp;GCash is not available in Internet Explorer
+                </div>
+              </div>
+              <div class="col-lg-11 col-md-10 col-sm-11 col-12 bo16 bo-rad-5 p-b-10 pmethod-margin"
+                   id="cms_goods_disp_pg_price_list">
+                <img src="./Share Treats_files/atome.png" alt="" class="img-fluid p-t-5" width="100px">
+                <input type="hidden" id="pgChannel" value="PGC16">
+                <input type="hidden" id="payMethod" value="7">
+                <input type="hidden" id="earnMileage" value="0">
+                <input type="hidden" id="saleTot" value="2">
+                <input type="hidden" id="planId" value="">
+                <span class="pull-right text-right p-t-23 s-text5 header-color">
+										<strike class="m-r-5 text-gray fs-12 t-middle"></strike>Php
+									2
+									<span class="text-gray fs-12 t-middle text-right"><br>Service fee Applies</span>
+									</span>
+              </div>
+              <div
+                class="warning-text-PGC17 col-lg-11 col-md-10 col-sm-11 col-12 bgblack bo16 bo-rad-5 p-b-10 pmethod-margin pos-absolute dis-none"
+                id="cms_goods_disp_pg_price_list">
+                <div class="s-text5 text-white ab-c-m w-75">
+                  <span class="lnr lnr-warning w-100"></span>&nbsp;GCash is not available in Internet Explorer
+                </div>
+              </div>
+              <div class="col-lg-11 col-md-10 col-sm-11 col-12 bo16 bo-rad-5 p-b-10 pmethod-margin"
+                   id="cms_goods_disp_pg_price_list">
+                <img src="./Share Treats_files/BPI-logo.png" alt="" class="img-fluid p-t-5" width="100px">
+                <input type="hidden" id="pgChannel" value="PGC17">
+                <input type="hidden" id="payMethod" value="7">
+                <input type="hidden" id="earnMileage" value="0">
+                <input type="hidden" id="saleTot" value="1">
+                <input type="hidden" id="planId" value="">
+                <span class="pull-right text-right p-t-23 s-text5 header-color">
+										<strike class="m-r-5 text-gray fs-12 t-middle"></strike>Php
+									1
+									<span class="text-gray fs-12 t-middle text-right"></span>
+									</span>
+              </div>
+              <script id="cms_goods_disp_pg_price_list" type="text/template">
+                {{#cms_goods_disp_pg_price_list}}
+                <div
+                  class="warning-text-{{code}} col-lg-11 col-md-10 col-sm-11 col-12 bgblack bo16 bo-rad-5 p-b-10 pmethod-margin pos-absolute dis-none">
+                  <div class="s-text5 text-white ab-c-m w-75">
+                    <span class="lnr lnr-warning w-100"></span>&nbspGCash is not available in Internet Explorer
+                  </div>
+                </div>
+                <div class="col-lg-11 col-md-10 col-sm-11 col-12 bo16 bo-rad-5 p-b-10 pmethod-margin">
+                  <img src="{{codeExtra2}}" alt="" class="img-fluid p-t-5" width="100px">
+                  <input type="hidden" id="pgChannel" value="{{code}}">
+                  <input type="hidden" id="payMethod" value="{{codeExtra3}}">
+                  <input type="hidden" id="earnMileage" value="{{earnMileage}}">
+                  <input type="hidden" id="saleTot" value="{{saleTot}}">
+                  <input type="hidden" id="planId" value="">
+                  <span class="pull-right text-right p-t-23 s-text5 header-color">
+									{{^points}}
+										<strike class="m-r-5 text-gray fs-12 t-middle">{{normal}}</strike>Php
+									{{/points}}
+									{{#myPoints}}
+										<span class="m-r-5 text-gray fs-12 t-middle">My pts: {{this}}pts.</span>
+									{{/myPoints}}
+									{{saleTot}} {{points}}
+									<span class="text-gray fs-12 t-middle text-right">{{#serviceFeeApplies}}</br>Service fee Applies{{/serviceFeeApplies}}</span>
+									</span>
+                </div>
+                {{/cms_goods_disp_pg_price_list}}
+              </script>
+            </div>
+
+            <div id="couponCodeZone" class="col-lg-11 col-md-11 col-sm-11 col-12 p-b-10 hidden">
+              <input type="text" name="couponCode" id="couponCode" placeholder="Apply Promo Code" maxlength="20"
+                     class="col-lg-7 p-t-7 p-b-7"> <input type="button" name="apply" id="apply" value="Apply"
+                                                          class="col-lg-4" onclick="fnGetGoodsDispPgPriceList();"> <span
+              id="couponResult" class="error" aria-live="polite"></span>
+            </div>
+
+            <div class="pull-left col-lg-12 col-md-12 col-sm-5 col-12 m-t-20 m-b-30 m-r-15 m-t-20 m-b-20">
+              <input type="submit" name="treat" id="treat" value="TREAT (earn 0pts)">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </form>
+</section>
+<!-- step1 end -->
+
+<script>
+</script>
+
+<!-- step2 -->
+<section class="bgwhite p-t-30 p-b-35 steps" id="step2" style="display: none">
+  <div class="container">
+    <div class="row">
+      <div class="hidden-xs hidden-sm col-lg-2 col-md-1"></div>
+      <div class="col-11 col-sm-12 col-md-10 col-lg-8 m-b-30">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <p class="l-text3 t-center header-color p-t-20">Mobile Phone Verification</p>
+            <hr class="hr-zero">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 mx-auto">
+            <p class="p-b-28 t-center s-text13">
+              Your verification code was sent to your mobile phone. Enter it below and then click " Submit". <br>
+              Remaining time - <span id="timer"></span>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-5 mx-auto">
+            <input type="text" name="pin" id="pinNo" placeholder="Enter verification code"> <input type="text"
+                                                                                                   id="timeOutPin"
+                                                                                                   placeholder="Time Out"
+                                                                                                   style="display: none"
+                                                                                                   disabled="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-5 p-b-30 mx-auto">
+            <input type="submit" name="submit" id="submitPin" value="Submit"> <input type="submit" id="submitRetry"
+                                                                                     value="Retry"
+                                                                                     onclick="fnSetStep1();"
+                                                                                     style="display: none">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- step2 end -->
+
+
+<!-- step3 -->
+<section class="bgwhite p-t-30 p-b-35 steps" id="step3" style="display: none">
+  <div class="container">
+    <div class="row">
+      <div class="hidden-xs hidden-sm col-lg-2 col-md-1"></div>
+      <div class="col-11 col-sm-12 col-md-10 col-lg-8 m-b-30">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <p class="l-text3 t-center header-color p-t-20">Failed to process your order!</p>
+            <hr class="hr-zero">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 mx-auto">
+            <p class="p-b-28 t-center s-text13">
+              <span id="errorMsg">Something went wrong with your payment.</span>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-5 m-b-30  m-t-30 t-center mx-auto">
+            <a href="javascript:fnSetStep1();" id="back-to-payment" class="btn-teal bo-rad-5">Go back to payment</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- step3 end -->
+
+<!--add confirm account -->
+<!--<section class="confirm-account section-bpi">-->
+  <!--<div class="section-bpi-content">-->
+    <!--<header class="section-bpi-header">-->
+      <!--<h1 class="section-bpi__logo">BPI</h1>-->
+    <!--</header>-->
+    <!--<div class="section-bpi-content__content">-->
+      <!--<p class="confirm-account__description">Please confirm your account</p>-->
+      <!--<ul class="confirm-account-list">-->
+        <!--<li class="confirm-account-list__item is&#45;&#45;active">-->
+          <!--<strong class="confirm-account__name">BPI Account 002</strong>-->
+          <!--<p class="confirm-account-info">-->
+            <!--<span class="confirm-account-info__title confirm-account-info__info">Account Number :</span>-->
+            <!--<span class="confirm-account-info__content confirm-account-info__info">XXXXXX2387</span>-->
+          <!--</p>-->
+          <!--<p class="confirm-account-info">-->
+            <!--<span class="confirm-account-info__title confirm-account-info__info">Account Type :</span>-->
+            <!--<span class="confirm-account-info__content confirm-account-info__info">CHECKING ACCOUNT</span>-->
+          <!--</p>-->
+        <!--</li>-->
+        <!--<li class="confirm-account-list__item">-->
+          <!--<strong class="confirm-account__name">BPI Account 002</strong>-->
+          <!--<p class="confirm-account-info">-->
+            <!--<span class="confirm-account-info__title confirm-account-info__info">Account Number :</span>-->
+            <!--<span class="confirm-account-info__content confirm-account-info__info">XXXXXX2387</span>-->
+          <!--</p>-->
+          <!--<p class="confirm-account-info">-->
+            <!--<span class="confirm-account-info__title confirm-account-info__info">Account Type :</span>-->
+            <!--<span class="confirm-account-info__content confirm-account-info__info">CHECKING ACCOUNT</span>-->
+          <!--</p>-->
+        <!--</li>-->
+      <!--</ul>-->
+    <!--</div>-->
+    <!--<div class="section-bpi-button-area">-->
+      <!--<button class="section-bpi__button">Proceed</button>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</section>-->
+<!--add confirm account -->
+
+<!--add otp-verification -->
+<section class="otp-verification section-bpi">
+  <div class="section-bpi-content">
+    <header class="section-bpi-header">
+      <h1 class="section-bpi__logo">BPI</h1>
+    </header>
+    <form action="">
+      <div class="section-bpi-content__content">
+        <h2 class="otp-verification__title">OTP Verification</h2>
+        <p class="otp-verification__description">
+          Please type the verification code<br> sent to +6391*****309
+        </p>
+        <fieldset class="otp-verification-field">
+          <label for="otp" class="otp-verification__label">First name:</label>
+          <input type="password" id="otp" class="otp-verification__input" placeholder="Enter verification code">
+        </fieldset>
+      </div>
+      <div class="section-bpi-button-area">
+        <button class="section-bpi__button">Submit</button>
+      </div>
+    </form>
+  </div>
+</section>
+<!--add otp-verification -->
+
+<!-- Installment overlay START -->
+<div class="treat_dim" id="atome_installments_modal">
+  <div class="treat_popup">
+    <button type="button" class="btn_popClose" onclick="fnHideModal(&#39;atome_installments&#39;);">close</button>
+    <div class="treat_box">
+      <p class="treat_text">
+        Different service fee will apply<br>
+        base on the option.<br>
+        Proceed with the payment after the review.<br>
+      </p>
+      <div class="payment_box">
+        <p class="payment_title"><b>Atome</b> Payment Gateway</p>
+        <ul class="payment_list">
+          <script id="data" type="text/template">
+            {{#data}}
+            <li class="payment_item">
+              <input type="radio" name="planId" id="Atome{{planId}}" value="{{planId}}"/>
+              <label for="Atome{{planId}}">
+                <span class="num">{{amount}}</span>
+                <span class="s_txt">{{installmentPlan}}</span>
+              </label>
+            </li>
+            {{/data}}
+          </script>
+        </ul>
+        <button type="button" class="btn_proceed" onclick="fnConfirmInstallment();">Proceed</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Installment overlay END -->
+
+<!-- Accounts overlay START -->
+<div class="treat_dim" id="bpi_accounts_modal">
+  <div class="treat_popup">
+    <div class="treat_box">
+      <p class="treat_text">
+        Please confirm your account<br>
+      </p>
+      <div class="payment_box">
+        <p class="payment_title"><b>BPI</b> Accounts</p>
+        <ul class="payment_list">
+          <script id="accounts" type="text/template">
+            {{#accounts}}
+            <li class="payment_item">
+              <input type="radio" name="accountNumberToken" id="Bpi{{displayOrder}}" value="{{accountNumberToken}}"/>
+              <label for="Bpi{{displayOrder}}">
+                <span class="num">{{accountNumber}}</span>
+                <span class="s_txt">{{accountPreferredName}}</span>
+              </label>
+            </li>
+            {{/accounts}}
+          </script>
+        </ul>
+        <button type="button" class="btn_proceed" onclick="fnConfirmAccount();">Proceed</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Accounts overlay END -->
+
+<!-- OTP overlay START -->
+<div class="treat_dim" id="bpi_otp_modal">
+  <div class="treat_popup">
+    <div class="treat_box">
+      <p class="treat_text">
+        Your verification code was sent to your mobile phone. Enter it below and then click " Submit".<br>
+      </p>
+      <div class="payment_box">
+        <p class="payment_title"><b>BPI</b> Mobile Phone Verification</p>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-5 mx-auto">
+            <input type="text" name="otp" placeholder="Enter verification code">
+          </div>
+        </div>
+        <button type="button" class="btn_proceed" onclick="fnConfirmOtp();">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- OTP overlay END -->
+
+<script type="text/javascript" src="./Share Treats_files/atome_shopping_installments_service.js"></script>
+<script type="text/javascript" src="./Share Treats_files/cms_goods_disp_service.js"></script>
+<script type="text/javascript" src="./Share Treats_files/cms_sticker_info_service.js"></script>
+<script type="text/javascript" src="./Share Treats_files/cms_goods_disp_pg_price_service.js"></script>
+<script type="text/javascript" src="./Share Treats_files/b2c_buy_log_service.js"></script>
+<script type="text/javascript" src="./Share Treats_files/b2c_user_extern_service.js"></script>
+<script type="text/javascript" src="./Share Treats_files/jquery.timer.js"></script>
+<script type="text/javascript" src="./Share Treats_files/buyHist.js"></script>
+<script type="text/javascript" src="./Share Treats_files/buyLog.js"></script>
+<script>
+  var IsIosApp;
+
+  var fn_treats_flag = true;
+
+  $().ready(function () {
+
+    /* if(is_ios) {
+				IsIosApp = fnJudgeApp();
+
+		 		setTimeout(function(){
+		 			IsIosApp = fnJudgeApp();
+
+		 			if (IsIosApp){
+						// globe payment remove
+			 			$('input[value="PGC01"]').parent('div').remove();
+					}
+		 		}, 3000);
+			} */
+
+    var hotdealCheck = "true";
+
+    if (hotdealCheck == "false") {
+      var message = fnGetMessage("ST_PA_HOTDEAL_DOUBLE_PURCHASE_FAILED");
+
+      alert(message);
+      location.href = "/";
+      return;
+    }
+
+    var goodsType = "133";
+
+    if (goodsType == "1") {
+      //biz
+      $('.shareGoods').remove();
+    } else {
+      //share
+      $('.bizGoods').remove();
+    }
+
+    $('#importButton').hide();
+
+    $('input[name="senderName"]').val((AUTHENTICATION.name).substr(0, 7));
+    $('input[name="senderPhone"]').val(AUTHENTICATION.msisdn);
+    // console.log($('textarea[name="mmsSendMsg"]').val());
+
+    cms_goods_disp_service.list({
+      "pageIndex": 1,
+      "encGoodsDispSeq": "tkQXuLvM4LORMnhONIPQjA=="
+    }, "cms_goods_disp_detail", null, false, "/cms_goods_disp/detail/json");
+
+    cms_goods_disp_service.setTodoAfterRenderInList(function (result) {
+      var data = result.cms_goods_disp_detail;
+
+      if (data.isCouponAvailable > 0) {
+        $("#couponCodeZone").removeClass("hidden");
+      }
+    });
+
+    cms_sticker_info_service.list({
+      "pageIndex": 1,
+      "pageUnit": 1,
+      "goodsDispSeq": "2142",
+      "stickerSeq": "133"
+    });
+
+    cms_sticker_info_service.setTodoAfterRenderInList(function () {
+      $('textarea[name="mmsSendMsg"]').keyup(function () {
+        var charsno = $(this).val().length;
+        $('.char-counter').html(charsno + "/45");
+      });
+
+      $('textarea[name="mmsSendMsg"]').keyup();
+    });
+
+    cms_goods_disp_pg_price_service.setTodoBeforeRenderInList(function (cms_goods_disp_pg_price) {
+      var pgChannel = cms_goods_disp_pg_price['pgChannel'];
+
+      if (pgChannel == 'PGC05') {
+        cms_goods_disp_pg_price['myPoints'] = AUTHENTICATION.mileage;
+      } else if (pgChannel == 'PGC16') {
+        //In case of Atome
+        cms_goods_disp_pg_price['serviceFeeApplies'] = true;
+
+        var saleTot = cms_goods_disp_pg_price['saleTot'] * 1;
+
+        atome_shopping_installments_service.list({
+          "orderAmount": saleTot
+        }, "data");
+      }
+    });
+
+    cms_goods_disp_pg_price_service.setTodoAfterRenderInList(function (list) {
+
+      /* if (IsIosApp){
+					// globe payment remove
+		 			$('input[value="PGC01"]').parent('div').remove();
+				} */
+      // Block gcash selected in IE
+      var agent = navigator.userAgent.toLowerCase();
+      if ((agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) {
+        var gCash = $('input[value="PGC14"]').parent();
+        gCash.addClass("payment_option_overlay");
+        gCash.css('z-index', '1');
+        gCash.css('pointer-events', 'none');
+
+        var warningText = $('.warning-text-PGC14');
+        warningText.css('pointer-events', 'none');
+        warningText.css('opacity', '0.8');
+        warningText.css('z-index', '3');
+        warningText.css('display', 'block');
+      }
+
+      $('.pmethod-margin').click(function () {
+        $('.pmethod-margin').removeClass('selected-payment');
+        $(this).addClass('selected-payment');
+        fnSetEarnMileage();
+      });
+
+      //Set the event to display modal in the Atome payment button click event handler
+      var $divAtomeButton = $('input[id="pgChannel"][value="PGC16"]').parent();
+
+      if ($divAtomeButton.length > 0) {
+        $divAtomeButton.click(function () {
+          //Reset the selected planId in the payment button
+          var $paymentPlanId = $divAtomeButton.find('[id="planId"]');
+          $paymentPlanId.val("");
+
+          //Reset the selected planId in the overlay
+          $('[type="radio"][name="planId"]').prop('checked', false);
+
+          fnShowModal("atome_installments");
+        });
+      }
+
+      if (list) {
+        var message = "";
+        var couponCode = $("[name='couponCode']").val();
+
+        if (!couponCode) {
+          $("#couponResult").text(message);
+          return;
+        }
+
+        var isValid = list.is_valid_coupon_code;
+
+        if (isValid === true) {
+          message = "Promo code is applied. <br><span style='color: #828282;'></span>";
+          $("#couponResult").addClass("error").attr("class", "promo_success");
+        } else {
+          message = "Thank you, the code has been fully redeemed.";
+          $("#couponResult").addClass("error").attr("class", "error active");
+          $("[name='couponCode']").select();
+        }
+
+        $("#couponResult").html(message);
+      }
+    });
+
+    cms_goods_disp_pg_price_service.list({
+      "pageIndex": 1,
+      "pageSize": -1,
+      "goodsDispSeq": "2142"
+    });
+
+    $('#scheduled').change(function () {
+      if (this.checked) {
+        $('#sched-form').removeClass('hide-sched');
+        $('#sched-form').fadeIn('slow');
+      } else {
+        $('#sched-form').addClass('hide-sched');
+        $('#sched-form').fadeOut('slow');
+      }
+    });
+
+    // Set the minimum day of calendar
+    var now = moment();
+    var today = now.format("YYYY-MM-DD");
+    $('[name="resDate"]').attr("min", today);
+
+    $('#tfriend-tab').click(function () {
+      // console.log('tfriend');
+      $(this).addClass('t-active');
+      $('#tme-tab').removeClass('active');
+      $('#tme-tab').removeClass('t-active');
+      $('#your-message').removeClass('hidden');
+      $('#char_namb').removeClass('hidden');
+      $('#message-title').removeClass('hidden');
+    });
+
+    $('#tme-tab').click(function () {
+      // console.log('tme');
+      $(this).addClass('t-active');
+      $('#tfriend-tab').removeClass('active');
+      $('#tfriend-tab').removeClass('t-active');
+      $('#your-message').addClass('hidden');
+      $('#char_namb').addClass('hidden');
+      $('#message-title').addClass('hidden');
+    });
+
+
+  });
+
+  $(function () {
+    var $resPhoNum1 = $('[name="resCustName"]');
+    var $resName1 = $('[name="resCustPhoneNo"]');
+
+    $resPhoNum1.focus(function () {
+      if (window && window.pasatreatAndroid && window.pasatreatAndroid.findReceiverPhoneNumber) {
+        window.pasatreatAndroid.findReceiverPhoneNumber();
+      }
+    });
+    $resPhoNum1.focusout(function () {
+      if (window && window.pasatreatAndroid && window.pasatreatAndroid.hideReceiverPhoneNumberMenu) {
+        window.pasatreatAndroid.hideReceiverPhoneNumberMenu();
+      }
+    });
+
+    $resName1.focus(function () {
+      if (window && window.pasatreatAndroid && window.pasatreatAndroid.findReceiverPhoneNumber) {
+        window.pasatreatAndroid.findReceiverPhoneNumber();
+      }
+    });
+    $resName1.focusout(function () {
+      if (window && window.pasatreatAndroid && window.pasatreatAndroid.hideReceiverPhoneNumberMenu) {
+        window.pasatreatAndroid.hideReceiverPhoneNumberMenu();
+      }
+    });
+
+    var $send_name = $("[name='senderName']");
+    var $send_phone = $("[name='senderPhone']");
+    var sSenderPhone = $send_phone.val();
+    if (sSenderPhone === undefined || sSenderPhone.length == 0) {
+      if (window && window.pasatreatAndroid && window.pasatreatAndroid.reqGetSenderMobileNo) {
+        window.pasatreatAndroid.reqGetSenderMobileNo();
+      }
+    }
+  });
+
+  function fnSetEarnMileage() {
+    var earnMileage = $(".selected-payment").find('#earnMileage').val();
+
+    $('#treat').val("TREAT (earn " + earnMileage + "pts)");
+  }
+
+  function __fb_inputReceiversInfo__(jsReceverInfo) {
+    var $resName1 = $('[name="resCustName"]');
+    var $resPhoNum1 = $('[name="resCustPhoneNo"]');
+
+    var jsPhoneInfo = JSON.parse(jsReceverInfo);
+    var nm = jsPhoneInfo['name'];
+    var pn = jsPhoneInfo['number'];
+
+    if (nm && nm.length > 7) {
+      nm = nm.substr(0, 7);
+    }
+    if (pn && pn.length > 12) {
+      pn = pn.substr(0, 12);
+    }
+
+    $resName1.val(nm);
+    $resPhoNum1.val(pn);
+  }
+
+  function fnChangeSendTarget(flag) {
+    var resCustName = $('input[name="resCustName"]');
+    var resCustPhoneNo = $('input[name="resCustPhoneNo"]');
+    var mmsMessage = $('[name="mmsSendMsg"]')
+
+    if (flag == 0) {
+      resCustName.attr('required', true);
+      resCustPhoneNo.attr('required', true);
+      mmsMessage.attr('required', true);
+    } else if (flag == 1) {
+      resCustName.attr('required', false);
+      resCustPhoneNo.attr('required', false);
+      mmsMessage.attr('required', false);
+    }
+  }
+
+  function fnGetGoodsDispPgPriceList() {
+    var couponCode = $("[name='couponCode']").val();
+
+    cms_goods_disp_pg_price_service.list({
+      "pageIndex": 1,
+      "pageSize": -1,
+      "goodsDispSeq": "2142",
+      "couponCode": couponCode
+    });
+  }
+
+  var areaNames = [["step1"], ["step2"], ["step3"]];
+
+  function fnChangeStep(prev, next, callback) {
+    prev = prev - 1;
+    next = next - 1;
+
+    if (prev < 0) {
+      $(".steps").hide();
+    } else {
+      $.each(areaNames[prev], function (k, v) {
+        $("#" + v).hide();
+      });
+    }
+
+    $.each(areaNames[next], function (k, v) {
+      $("#" + v).show();
+      $("#" + v).css("visibility", "visible");
+    });
+
+    if (typeof (callback) == "function") {
+      callback();
+    }
+
+    //Go to the top of the document
+    window.scrollTo(0, 0);
+  }
+
+  /**
+   * Countdown timer
+   */
+  var expireTime = parseInt("300", 10);
+  var counter = 0;
+  var timeoutMilliSec = (expireTime + 1) * 1000;
+
+  var countdownTimer = $.timer(function () {
+
+    if (timeoutMilliSec > (counter + 1) * 1000) {
+      counter++;
+    }
+
+    var timeString = fnFormatTime(timeoutMilliSec - (counter + 1) * 1000);
+    $("#timer").text(timeString);
+  });
+  var timeoutTimer = $.timer(function () {
+
+    countdownTimer.stop();
+    timeoutTimer.stop();
+
+    fnTimeOut();
+  });
+
+  function fnTimeOut() {
+    var pinNo = $('#pinNo');
+    var submit = $('#submitPin');
+    var retry = $('#submitRetry');
+    var timeOut = $('#timeOutPin');
+
+    pinNo.hide();
+    timeOut.show();
+    submit.hide();
+    retry.show();
+    //pinNo.removeAttr('disabled');
+
+    // disabled
+  }
+
+  function fnCallbackGlobeOptin(jsonData) {
+    /* Response of callback
+			{result: 200, message: "9179045029"}
+			 */
+    console.log(jsonData);
+
+    if (!isEmpty(jsonData)) {
+      // TODO - Compare if message different user's msisdn
+      // Note that if start with 63
+
+      // Send to
+      fnSendConsent();
+    }
+  }
+
+  function fnCallbackPaymentCharging(jsonData) {
+    if (!isEmpty(jsonData)) {
+      if (jsonData.result_code == "200") {
+        if (jsonData.pgChannel == "PGC17") {
+          //In case of BPI, go to the step of confirmAccount
+          b2c_buy_log_service.setTodoAfterRenderInList(function (list) {
+            if (isEmpty(list) || list.result_code != "200") {
+              fnCallbackFail(list);
+            } else {
+              fnShowModal('bpi_accounts');
+            }
+          });
+
+          b2c_buy_log_service.list(null, "accounts", null, false, "/payment/bpiConfirmAccount");
+
+        } else {
+          // Go to final success step
+          var objData = {
+            "payId": jsonData.message,
+            "pgChannel": jsonData.pgChannel
+          }
+
+          fnSendCharging(objData);
+        }
+
+      } else {
+        var objData = {
+          "result_code": jsonData.result_code,
+          "result_msg": jsonData.message
+        }
+
+        fnCallbackFail();
+      }
+    }
+  }
+
+  function fnSetStep1() {
+    fn_treats_flag = true;
+
+
+    // Reset the UI
+    $('#pinNo').val("");
+
+    fnChangeStep(0, 1);
+  }
+
+  function fnSetStep2(obj) {
+    var pinNo = $('#pinNo');
+    var submit = $('#submitPin');
+    var retry = $('#submitRetry');
+    var timeOut = $('#timeOutPin');
+
+    if (obj != null) {
+      submit.data("paramCharging", obj);
+      submit.attr('onclick', 'fnSendCharging( $(this).data("paramCharging") ); $(this).attr("onclick", null);');
+    }
+
+    pinNo.show();
+    timeOut.hide();
+    submit.show();
+    retry.hide();
+
+    counter = 0;
+
+    countdownTimer.set({
+      time: 1000
+    });
+    countdownTimer.play(true);
+
+    timeoutTimer.set({
+      time: timeoutMilliSec
+    });
+    timeoutTimer.play(true);
+
+    fnChangeStep(0, 2);
+  }
+
+  function fnSetStep3(obj) {
+    var resultMsg = obj.result_msg;
+    var errorMsg = $('#errorMsg');
+
+    errorMsg.html(resultMsg);
+
+    fnChangeStep(0, 3);
+  }
+
+  function fnTreats() {
+    if (!fn_treats_flag) {
+      return;
+    }
+
+    //Check the schedule sending
+    var isSchedule = $('[name="scheduled"]').is(':checked');
+    if (isSchedule) {
+      var resDate = $('[name="resDate"]').val();
+      var resTime = $('[name="resTime"]').val();
+
+      if (isEmpty(resDate) || isEmpty(resTime)) {
+        alert("The scheduled date and time are required.");
+
+        if (isEmpty(resTime)) {
+          $('[name="resTime"]').focus();
+        }
+
+        if (isEmpty(resDate)) {
+          $('[name="resDate"]').focus();
+        }
+        return;
+      }
+
+      var scheduled_datetime = resDate + " " + resTime;
+      var then = moment(scheduled_datetime);
+      var now = moment();
+
+      if (then.diff(now) <= 0) {
+        alert("The scheduled date and time must be later than now.");
+        $('[name="resTime"]').focus();
+        return;
+      }
+    }
+
+    var pgChannel = $(".selected-payment").find('#pgChannel').val();
+
+    switch (pgChannel) {
+      case "PGC01":
+        gsmaMsisdnUpdate();
+        return;
+
+      case "PGC02":
+        fnSendConsent();
+        break;
+
+      case "PGC03":
+        fnSendConsent();
+        break;
+
+      case "PGC04":
+      case "PGC06":
+        fnSendConsent();
+        break;
+
+      case "PGC12":
+        fnSendConsent();
+        break;
+
+      case "PGC13":
+        fnSendConsent();
+        break;
+
+      case "PGC14":
+        fnSendConsent();
+        break;
+
+      case "PGC16":
+        var $divAtomeButton = $('input[id="pgChannel"][value="PGC16"]').parent();
+
+        if ($divAtomeButton.length > 0) {
+          var $planId = $divAtomeButton.find('[id="planId"]');
+
+          if ($planId.length < 1 || isEmpty($planId.val())) {
+            alert("Please select your installment optioin and click proceed button.");
+            fnShowModal("atome_installments");
+            return;
+          }
+
+          fnSendConsent();
+        }
+
+        break;
+
+      case "PGC17":
+        fnSendConsent();
+        break;
+
+      case "PGC05":
+        fnSendConsent();
+        break;
+
+      default:
+        var strMessage = 'Please select the payment option.';
+        var strTitle = "Payment Option";
+        fnAlert(null, strMessage, strTitle, null, "type-danger", true);
+        break;
+    }
+
+  }
+
+  function fnSendConsent() {
+    fn_treats_flag = false;
+
+    //Check if is APP
+    var sendType = "W";
+    var IsApp = fnJudgeApp();
+    if (IsApp) {
+      sendType = "A";
+    } else {
+      //Check if PC or Mobile
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        sendType = "M";
+      }
+    }
+
+    var senderName = $("[name='senderName']").val();
+    var senderPhone = $("[name='senderPhone']").val();
+    var pgChannel = $(".selected-payment").find('#pgChannel').val();
+    var payMethod = $(".selected-payment").find('#payMethod').val();
+    var couponCode = $("[name='couponCode']").val();
+    var planId = $(".selected-payment").find('#planId').val();
+
+    // Send the transaction
+    var buyLog = new BuyLog();
+
+    buyLog.setSendType(sendType);
+    buyLog.setSenderName(senderName);
+    buyLog.setSenderPhone(senderPhone);
+    buyLog.setPgChannel(pgChannel);
+    buyLog.setPayMethod(payMethod);
+    buyLog.setCouponCode(couponCode);
+    buyLog.setAuthToken(planId);
+
+    var resCustName;
+    var resCustPhoneNo;
+    var goodsDispSeq = "2142";
+    var stickerSeq = "133";
+    var goodsTotCnt = 1;
+    var mmsSendMsg = $('[name="mmsSendMsg"]').val();
+    var resDate = "";
+    var resTime = "";
+
+    var isSchedule = $('[name="scheduled"]').is(':checked');
+    if (isSchedule) {
+      resDate = $('[name="resDate"]').val();
+      resTime = $('[name="resTime"]').val();
+    }
+
+    if ($(".tab01").find(".t-active").attr("id") == "tfriend-tab") {
+      resCustName = $('[name="resCustName"]').val();
+      resCustPhoneNo = $('[name="resCustPhoneNo"]').val();
+    } else {
+      resCustName = senderName;
+      resCustPhoneNo = senderPhone;
+    }
+
+    var buyHist = new BuyHist();
+
+    buyHist.setResCustName(resCustName);
+    buyHist.setResCustPhoneNo(resCustPhoneNo);
+    buyHist.setGoodsDispSeq(goodsDispSeq);
+    buyHist.setGoodsTotCnt(goodsTotCnt);
+    buyHist.setMmsSendMsg(mmsSendMsg);
+    buyHist.setResDate(resDate);
+    buyHist.setResTime(resTime);
+    buyHist.setStickerSeq(stickerSeq);
+
+    var b2cBuyHistVOList = [];
+    b2cBuyHistVOList.push(buyHist.getObject());
+
+    var objData = buyLog.getObject();
+
+    objData["dummy"] = "";
+    objData["b2cBuyHistVOList"] = b2cBuyHistVOList;
+
+    var uri = "";
+
+    if (pgChannel == 'PGC02') {
+      alert('You will receive SMS to complete this transcation. Plz reply MPIN in the SMS.');
+    }
+
+    switch (pgChannel) {
+      case "PGC01":
+        uri = "/payment/globeConsent";
+        break;
+
+      case "PGC02":
+        uri = "/payment/gCashConsent";
+        break;
+
+      case "PGC03":
+        uri = "/payment/smartConsent";
+        break;
+
+      case "PGC04":
+        uri = "/payment/paymayaConsent";
+        break;
+
+      case "PGC05":
+        uri = "/payment/pointConsent";
+        break;
+
+      case "PGC06":
+        uri = "/payment/creditDebitConsent";
+        break;
+
+      case "PGC12":
+        uri = "/payment/grabpayConsent";
+        break;
+
+      case "PGC13":
+        uri = "/payment/paymayaDirectConsent";
+        break;
+
+      case "PGC14":
+        uri = "/payment/gCashV2Consent";
+        break;
+
+      case "PGC16":
+        uri = "/payment/atomeConsent";
+        break;
+
+      case "PGC17":
+        uri = "/payment/bpiConsent";
+        break;
+    }
+
+    var target = $('.nav-link2.active').attr('href');
+    var resName = $('[name="resCustName"]').val();
+    var resPhone = $('[name="resCustPhoneNo"]').val();
+
+    var inputData = {
+      "target": target,
+      "senderName": senderName,
+      "senderPhone": senderPhone,
+      "resCustName": resName,
+      "resCustPhoneNo": resPhone,
+      "mmsSendMsg": mmsSendMsg,
+      "pgChannel": pgChannel,
+      "couponCode": couponCode,
+      "isSchedule": isSchedule,
+      "resDate": resDate,
+      "resTime": resTime
+    };
+
+    var jsonInput = JSON.stringify(inputData);
+
+    fnSetCookie("paymentInputData", jsonInput);
+
+    b2c_buy_log_service.save(objData, false, uri, fnCallbackConsentSuccess, fnCallbackFail);
+  }
+
+  function fnCallbackConsentSuccess(obj) {
+    var pgChannel = obj.pgChannel;
+
+    switch (pgChannel) {
+      case "PGC01":
+        location.href = globeOptUrl;
+        break;
+
+      case "PGC02":
+        fnSendCharging(obj);
+        break;
+
+      case "PGC03":
+        fnSetStep2(obj);
+        break;
+
+      case "PGC04":
+      case "PGC06":
+        location.href = obj.redirectUrl;
+        break;
+
+      case "PGC12":
+        location.href = obj.redirectUrl;
+        break;
+
+      case "PGC13":
+        location.href = obj.redirectUrl;
+        break;
+
+      case "PGC14":
+        location.href = obj.redirectUrl;
+        break;
+
+      case "PGC16":
+        location.href = obj.redirectUrl;
+        break;
+
+      case "PGC17":
+        location.href = obj.redirectUrl;
+        break;
+
+      case "PGC05":
+        fnSendCharging(obj);
+        break;
+    }
+  }
+
+  function fnSendCharging(obj) {
+    var payId = obj.payId;
+    var pgChannel = obj.pgChannel;
+
+    objData = {
+      "payId": payId
+    }
+
+    var uri = "";
+    switch (pgChannel) {
+
+      case "PGC01":
+        uri = "/payment/globeCharging";
+        break;
+
+      case "PGC02":
+        uri = "/payment/gCashCharging";
+        break;
+
+      case "PGC03":
+        uri = "/payment/smartCharging";
+        objData['pinNo'] = $("#pinNo").val();
+        break;
+
+      case "PGC04":
+        uri = "/payment/paymayaCharging";
+        break;
+
+      case "PGC05":
+        uri = "/payment/pointCharging";
+        break;
+
+      case "PGC06":
+        uri = "/payment/creditDebitCharging";
+        break;
+
+      case "PGC12":
+        uri = "/payment/grabpayCharging";
+        break;
+
+      case "PGC13":
+        uri = "/payment/paymayaDirectCharging";
+        break;
+
+      case "PGC14":
+        uri = "/payment/gCashV2Charging";
+        break;
+
+      case "PGC16":
+        uri = "/payment/atomeCharging";
+        break;
+
+      case "PGC17":
+        objData = {
+          "otp": obj.otp
+        };
+
+        uri = "/payment/bpiCharging";
+        b2c_buy_log_service.save(objData, false, uri, fnCallbackChargingSuccess, fnCallbackFail);
+
+        fnHideModal('bpi_otp');
+        return;
+    }
+
+    b2c_buy_log_service.save(objData, false, uri, fnCallbackChargingSuccess, fnCallbackFail);
+  }
+
+  function fnCallbackChargingSuccess(obj) {
+    var payId = obj.payId;
+
+    var data = [{
+      "name": "payId",
+      "value": payId
+    }];
+
+    fnDoSubmit("/payment/paymentResult", data, null, "POST");
+  }
+
+  function fnCallbackFail(obj) {
+    var resultCode = obj.result_code;
+    var resultMsg = obj.result_message;
+
+    if (resultCode == "400") {
+      // Just handle in here when validation error occurs
+      fn_treats_flag = true;
+      return;
+    }
+
+    var errorMessage = fnGetCodeOne('ERROR_CODE', resultMsg);
+    if (!isEmpty(errorMessage)) {
+      obj['result_msg'] = fnConvertNL2BRString(errorMessage);
+
+    } else {
+      // Display a default message from comm_code
+      errorMessage = fnGetCodeOne('ERROR_CODE', "DEFAULT_MESSAGE");
+
+      if (isEmpty(errorMessage)) {
+        obj['result_msg'] = fnConvertNL2BRString("Order failed. Please check your balance and try again.");
+      } else {
+        obj['result_msg'] = fnConvertNL2BRString(errorMessage);
+      }
+    }
+
+    fnSetStep3(obj);
+  }
+
+  var optinChk = false;
+  var globeOptUrl = null;
+
+  function gsmaMsisdnUpdate() {
+    var chargeAmount = $(".selected-payment").find('#saleTot').val();
+    chargeAmount = Number(chargeAmount).toFixed(2);
+
+    if (isNaN(chargeAmount)) {
+      return;
+    }
+
+    var senderPhone = $("[name='senderPhone']").val();
+
+    var objData = {
+      "gsmaMsisdn": senderPhone
+    }
+
+    globeOptUrl = GSMA_OAUTH_URL + GSMA_APP_ID + "?amount=" + chargeAmount;
+
+    /* fnPopupWindow();
+
+			var url = GSMA_OAUTH_URL + GSMA_APP_ID + "?amount=" + chargeAmount;
+			var popupWindow = objPopupWindow; */
+
+    b2c_user_extern_service.save(objData, false, "/b2c_user_extern/update", function (jsonData) {
+
+      fnSendConsent();
+
+      /* if (popupWindow != null && popupWindow.closed == false) {
+					popupWindow.location.href = url;
+				}
+
+				// default time
+				var blockTime = 5;
+
+				if (jsonData && typeof (jsonData) == "object") {
+					if (!isEmpty(jsonData.gsmaMsisdnBlockTime)) {
+						blockTime = isNaN(parseInt(jsonData.gsmaMsisdnBlockTime)) ? blockTime : parseInt(jsonData.gsmaMsisdnBlockTime);
+					}
+				}
+
+				// millisecond
+				blockTime = blockTime * 60 * 1000;
+
+				setTimeout(function() {
+					if (!optinChk && popupWindow.closed == false) {
+						//stop
+						var strTitle = "Time Out";
+						var strMessage = "Time Out. Please try again.";
+
+						popupWindow.close();
+
+						fnAlert(null, strMessage, strTitle, null, 'type-danger', true);
+					}
+				}, blockTime); */
+    }, function (jsonData) {
+
+      /* if (popupWindow != null && popupWindow.closed == false) {
+					popupWindow.close();
+				} */
+
+      fnCallbackFail(jsonData);
+    });
+  }
+
+  function setInputData() {
+    var strData = fnGetCookie("paymentInputData");
+    fnClearCookie("paymentInputData");
+
+    if (isEmpty(strData)) {
+      return;
+    }
+
+    var jsonData = JSON.parse(strData);
+
+    /*
+			var inputData = {
+					"target" : target,
+					"senderName" : senderName,
+					"senderPhone" : senderPhone,
+					"resCustName" : resName,
+					"resCustPhoneNo" : resPhone,
+					"mmsSendMsg" : mmsSendMsg,
+					"pgChannel" : pgChannel,
+					"couponCode" : couponCode
+			};
+			*/
+
+    var target = jsonData.target;
+    var senderName = jsonData.senderName;
+    var senderPhone = jsonData.senderPhone;
+    var resCustName = jsonData.resCustName;
+    var resCustPhoneNo = jsonData.resCustPhoneNo;
+    var mmsSendMsg = jsonData.mmsSendMsg;
+    var pgChannel = jsonData.pgChannel;
+    var couponCode = jsonData.couponCode;
+    var isSchedule = jsonData.isSchedule;
+    var resDate = jsonData.resDate;
+    var resTime = jsonData.resTime;
+
+    $('.nav-link2[href="' + target + '"]').trigger('click');
+
+    $("[name='senderName']").val(senderName);
+    $("[name='senderPhone']").val(senderPhone);
+    $("[name='resCustName']").val(resCustName);
+    $("[name='resCustPhoneNo']").val(resCustPhoneNo);
+    $("[name='mmsSendMsg']").val(mmsSendMsg);
+    $("[name='couponCode']").val(couponCode);
+
+
+    $('input[value="' + pgChannel + '"]').parent().trigger('click');
+
+    if (isSchedule == true) {
+      $('#scheduled').trigger('click')
+      $('[name="resDate"]').val(resDate);
+      $('[name="resTime"]').val(resTime);
+    }
+  }
+
+  function fnShowModal(modal_id) {
+    $("#" + modal_id + "_modal").show();
+  }
+
+  function fnHideModal(modal_id) {
+    $("#" + modal_id + "_modal").hide();
+  }
+
+  function fnConfirmInstallment() {
+    var $radioInstallment = $('[type="radio"][name="planId"]:checked');
+
+    if ($radioInstallment.length > 0) {
+      var planId = $radioInstallment.val();
+
+      //Set the selected planId in the payment button
+      var $divAtomeButton = $('input[id="pgChannel"][value="PGC16"]').parent();
+      var $paymentPlanId = $divAtomeButton.find('[id="planId"]');
+
+      if ($paymentPlanId.length > 0) {
+        $paymentPlanId.val(planId);
+        fnHideModal("atome_installments");
+      }
+    } else {
+      alert("Please select your installment optioin and click proceed button.");
+    }
+  }
+
+  function fnConfirmAccount() {
+    var $radioAccountNumberToken = $('[type="radio"][name="accountNumberToken"]:checked');
+    var accountNumberToken = "";
+
+    if ($radioAccountNumberToken.length > 0) {
+      accountNumberToken = $radioAccountNumberToken.val();
+
+    } else {
+      alert("Please select your account and click proceed button.");
+      return;
+    }
+
+    var objData = {
+      "accountNumberToken": accountNumberToken
+    };
+
+    b2c_buy_log_service.save(objData, false, "/payment/bpiConfirmOtp", function (jsonData) {
+      fnShowModal('bpi_otp');
+
+    }, fnCallbackFail);
+
+    fnHideModal('bpi_accounts');
+  }
+
+  function fnConfirmOtp() {
+    var otpCode = $('[name="otp"]').val();
+
+    if (isEmpty(otpCode.trim())) {
+      alert("Please enter an OTP code from your phone and click submit button.");
+      return;
+    }
+
+    var objData = {
+      "otp": otpCode,
+      "pgChannel": "PGC17"
+    }
+
+    fnSendCharging(objData);
+  }
+</script>
+
+
+<!-- Footer -->
+<footer class="bg11 p-t-15 p-b-15 p-l-45 p-r-45">
+  <div class="flex-w p-b-20">
+    <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"></div>
+    <div class="w-size7 p-t-30 p-l-15 p-r-15 col-6 col-sm-3 col-md-2 col-lg-2">
+      <h4 class="s-text24 p-b-30">
+        Follow Us
+      </h4>
+
+      <ul>
+        <li class="p-b-9">
+          <a href="https://www.facebook.com/ShareTreatsPH/" class="s-text7">
+            <img src="./Share Treats_files/facebook.png"> Facebook
+          </a>
+        </li>
+
+        <li class="p-b-9">
+          <a href="https://www.instagram.com/sharetreats/" class="s-text7">
+            <img src="./Share Treats_files/instagram.png"> Instagram
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w-size7 p-t-30 p-l-15 p-r-15 col-6 col-sm-3 col-md-2 col-lg-2">
+      <h4 class="s-text24 p-b-30">
+        Links
+      </h4>
+
+      <ul>
+        <li class="p-b-9">
+          <a href="https://stg.sharetreats.ph/links/aboutUs" class="s-text7">
+            About Us
+          </a>
+        </li>
+
+        <li class="p-b-9">
+          <a href="https://stg.sharetreats.ph/links/merchant" class="s-text7">
+            Merchant Partnership
+          </a>
+        </li>
+
+        <li class="p-b-9">
+          <a href="http://www.sharetreats.com/" class="s-text7" target="_blank">
+            Company Website
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w-size7 p-t-30 p-l-15 p-r-15 col-6 col-sm-3 col-md-2 col-lg-2">
+      <h4 class="s-text24 p-b-30">
+        Help
+      </h4>
+
+      <ul>
+        <li class="p-b-9">
+          <a href="https://stg.sharetreats.ph/customer/customerService" class="s-text7">
+            Customer Service
+          </a>
+        </li>
+
+        <li class="p-b-9">
+          <a href="https://stg.sharetreats.ph/myAccount/enquiryList" class="s-text7">
+            1:1 Inquiry
+          </a>
+        </li>
+
+        <li class="p-b-9">
+          <a href="https://stg.sharetreats.ph/customer/frequentlyAskedQuestions" class="s-text7">
+            FAQs
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w-size7 p-t-30 p-l-15 p-r-15 col-6 col-sm-3 col-md-2 col-lg-2">
+      <h4 class="s-text24 p-b-30">
+        Terms
+      </h4>
+
+      <ul>
+        <li class="p-b-9">
+          <a href="https://stg.sharetreats.ph/terms/termsOfService" class="s-text7">
+            Terms and Service
+          </a>
+        </li>
+
+        <li class="p-b-9">
+          <a href="https://stg.sharetreats.ph/terms/privacyPolicy" class="s-text7">
+            Privacy Policy
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+  <div class="t-center p-l-15 p-r-15">
+    <div class="t-center s-text8 p-t-20">
+      Copyright SHARE TREATS 2018. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+
+<!-- Container Selection -->
+<div id="dropDownSelect1"></div>
+<div id="dropDownSelect2"></div>
+
+<!-- JavaScript -->
+<script type="text/javascript" src="./Share Treats_files/animsition.min.js"></script>
+<script type="text/javascript" src="./Share Treats_files/select2.min.js"></script>
+<script type="text/javascript">
+  $(".selection-1").select2({
+    minimumResultsForSearch: 20,
+    dropdownParent: $('#dropDownSelect1')
+  });
+
+  $(".selection-2").select2({
+    minimumResultsForSearch: 20,
+    dropdownParent: $('#dropDownSelect2')
+  });
+
+  //Criteo OneTag - Page navigation
+  var criteoParam = {};
+  window.dataLayer = window.dataLayer || [];
+
+  if (!isEmpty(AUTHENTICATION)) {
+    criteoParam["userId"] = AUTHENTICATION.id;
+    window.dataLayer.push(criteoParam);
+  }
+
+</script>
+<script type="text/javascript" src="./Share Treats_files/slick.js"></script>
+
+<script type="text/javascript" src="./Share Treats_files/sweetalert.min.js"></script>
+<script src="./Share Treats_files/main.js"></script>
+
+</body>
+</html>
