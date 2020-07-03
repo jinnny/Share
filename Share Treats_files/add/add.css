@@ -200,7 +200,7 @@ body.is--fixed {
 .otp-verification__input:-ms-input-placeholder {
   color: #AEAEAE;
   font-size: 18px;
-  padding: 0;
+  padding-left: 20px;
   line-height: 20px;
   text-align: left; }
 .otp-verification__input:-moz-placeholder {
