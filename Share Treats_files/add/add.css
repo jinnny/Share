@@ -12,6 +12,9 @@ body.is--fixed {
   width: 100%;
   height: 100%;
   position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
   top: 0;
   z-index: 1111;
   justify-content: center;
@@ -89,7 +92,7 @@ body.is--fixed {
 .confirm-account-list {
   height: 430px;
   overflow-y: auto;
-  padding: 0 26px; }
+  padding: 0 26px 125px; }
 @media screen and (max-width: 767px) {
   .confirm-account-list {
     height: calc(100vh - 60px - 67px - 55px);
@@ -176,7 +179,8 @@ body.is--fixed {
   border-radius: 8px;
   color: #2D3142;
   text-align: center;
-  font-family: "password", "Roboto", sans-serif; }
+  font-family: "password", "Roboto", sans-serif;
+  -webkit-appearance: none; }
 @media screen and (max-width: 767px) {
   .otp-verification__input {
     height: 60px; } }
@@ -185,7 +189,7 @@ body.is--fixed {
   color: #AEAEAE;
   font-size: 18px;
   padding: 0;
-  line-height: 20px;
+  line-height: 30px;
   text-align: left; }
 .otp-verification__input::-moz-placeholder {
   color: #AEAEAE;
