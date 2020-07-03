@@ -1956,47 +1956,47 @@
 <!-- step3 end -->
 
 <!--add confirm account -->
-<!--<section class="confirm-account section-bpi">-->
-  <!--<div class="section-bpi-content">-->
-    <!--<header class="section-bpi-header">-->
-      <!--<h1 class="section-bpi__logo">BPI</h1>-->
-    <!--</header>-->
-    <!--<div class="section-bpi-content__content">-->
-      <!--<p class="confirm-account__description">Please confirm your account</p>-->
-      <!--<ul class="confirm-account-list">-->
-        <!--<li class="confirm-account-list__item is&#45;&#45;active">-->
-          <!--<strong class="confirm-account__name">BPI Account 002</strong>-->
-          <!--<p class="confirm-account-info">-->
-            <!--<span class="confirm-account-info__title confirm-account-info__info">Account Number :</span>-->
-            <!--<span class="confirm-account-info__content confirm-account-info__info">XXXXXX2387</span>-->
-          <!--</p>-->
-          <!--<p class="confirm-account-info">-->
-            <!--<span class="confirm-account-info__title confirm-account-info__info">Account Type :</span>-->
-            <!--<span class="confirm-account-info__content confirm-account-info__info">CHECKING ACCOUNT</span>-->
-          <!--</p>-->
-        <!--</li>-->
-        <!--<li class="confirm-account-list__item">-->
-          <!--<strong class="confirm-account__name">BPI Account 002</strong>-->
-          <!--<p class="confirm-account-info">-->
-            <!--<span class="confirm-account-info__title confirm-account-info__info">Account Number :</span>-->
-            <!--<span class="confirm-account-info__content confirm-account-info__info">XXXXXX2387</span>-->
-          <!--</p>-->
-          <!--<p class="confirm-account-info">-->
-            <!--<span class="confirm-account-info__title confirm-account-info__info">Account Type :</span>-->
-            <!--<span class="confirm-account-info__content confirm-account-info__info">CHECKING ACCOUNT</span>-->
-          <!--</p>-->
-        <!--</li>-->
-      <!--</ul>-->
-    <!--</div>-->
-    <!--<div class="section-bpi-button-area">-->
-      <!--<button class="section-bpi__button">Proceed</button>-->
-    <!--</div>-->
-  <!--</div>-->
-<!--</section>-->
+<section class="confirm-account section-bpi js-confirm-account">
+  <div class="section-bpi-content">
+    <header class="section-bpi-header">
+      <h1 class="section-bpi__logo">BPI</h1>
+    </header>
+    <div class="section-bpi-content__content">
+      <p class="confirm-account__description">Please confirm your account</p>
+      <ul class="confirm-account-list">
+        <li class="confirm-account-list__item is--active">
+          <strong class="confirm-account__name">BPI Account 002</strong>
+          <p class="confirm-account-info">
+            <span class="confirm-account-info__title confirm-account-info__info">Account Number :</span>
+            <span class="confirm-account-info__content confirm-account-info__info">XXXXXX2387</span>
+          </p>
+          <p class="confirm-account-info">
+            <span class="confirm-account-info__title confirm-account-info__info">Account Type :</span>
+            <span class="confirm-account-info__content confirm-account-info__info">CHECKING ACCOUNT</span>
+          </p>
+        </li>
+        <li class="confirm-account-list__item">
+          <strong class="confirm-account__name">BPI Account 002</strong>
+          <p class="confirm-account-info">
+            <span class="confirm-account-info__title confirm-account-info__info">Account Number :</span>
+            <span class="confirm-account-info__content confirm-account-info__info">XXXXXX2387</span>
+          </p>
+          <p class="confirm-account-info">
+            <span class="confirm-account-info__title confirm-account-info__info">Account Type :</span>
+            <span class="confirm-account-info__content confirm-account-info__info">CHECKING ACCOUNT</span>
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="section-bpi-button-area">
+      <button class="section-bpi__button">Proceed</button>
+    </div>
+  </div>
+</section>
 <!--add confirm account -->
 
 <!--add otp-verification -->
-<section class="otp-verification section-bpi">
+<section class="otp-verification section-bpi js-otp-verification">
   <div class="section-bpi-content">
     <header class="section-bpi-header">
       <h1 class="section-bpi__logo">BPI</h1>
@@ -2019,6 +2019,32 @@
   </div>
 </section>
 <!--add otp-verification -->
+
+<script>
+  // confirm account open
+  function openConfirmAccount () {
+    $('.js-confirm-account').addClass('is--show');
+    $('body').addClass('is--fixed');
+  };
+
+  // confirm account close
+  function closeConfirmAccount () {
+    $('.js-confirm-account').removeClass('is--show');
+    $('body').removeClass('is--fixed');
+  };
+
+  // otp open
+  function openOtp () {
+    $('.js-otp-verification').addClass('is--show');
+    $('body').addClass('is--fixed');
+  };
+
+  // otp close
+  function closeOtp () {
+    $('.js-otp-verification').removeClass('is--show');
+    $('body').removeClass('is--fixed');
+  };
+</script>
 
 <!-- Installment overlay START -->
 <div class="treat_dim" id="atome_installments_modal">
