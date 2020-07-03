@@ -96,7 +96,7 @@ body.is--fixed {
 @media screen and (max-width: 767px) {
   .confirm-account-list {
     height: calc(100vh - 60px - 67px - 55px);
-    padding: 0 24px 90px; } }
+    padding: 0 24px 128px; } }
 .confirm-account-list__item {
   background: #FFFFFF;
   box-shadow: 0px 4px 8px rgba(33, 33, 33, 0.16);
