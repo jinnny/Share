@@ -92,11 +92,11 @@ body.is--fixed {
 .confirm-account-list {
   height: 430px;
   overflow-y: auto;
-  padding: 0 26px 125px; }
+  padding: 0 26px; }
 @media screen and (max-width: 767px) {
   .confirm-account-list {
     height: calc(100vh - 60px - 67px - 55px);
-    padding: 0 24px 15px; } }
+    padding: 0 24px 125px; } }
 .confirm-account-list__item {
   background: #FFFFFF;
   box-shadow: 0px 4px 8px rgba(33, 33, 33, 0.16);

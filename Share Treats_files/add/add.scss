@@ -118,10 +118,10 @@ body.is--fixed {
   &-list{
     height: 430px;
     overflow-y: auto;
-    padding: 0 26px 125px;
+    padding: 0 26px;
     @media screen and (max-width: 767px) {
       height: calc(100vh - 60px - 67px - 55px);
-      padding: 0 24px 15px;
+      padding: 0 24px 125px;
     }
     &__item {
       background: #FFFFFF;
