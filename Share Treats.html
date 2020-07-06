@@ -1964,7 +1964,7 @@
     <div class="section-bpi-content__content">
       <p class="confirm-account__description">Please confirm your account</p>
       <ul class="confirm-account-list">
-        <li class="confirm-account-list__item is--active">
+        <li class="confirm-account-list__item js-confirm-account-list__item">
           <strong class="confirm-account__name">BPI Account 002</strong>
           <p class="confirm-account-info">
             <span class="confirm-account-info__title confirm-account-info__info">Account Number :</span>
@@ -1975,7 +1975,7 @@
             <span class="confirm-account-info__content confirm-account-info__info">CHECKING ACCOUNT</span>
           </p>
         </li>
-        <li class="confirm-account-list__item">
+        <li class="confirm-account-list__item js-confirm-account-list__item">
           <strong class="confirm-account__name">BPI Account 002</strong>
           <p class="confirm-account-info">
             <span class="confirm-account-info__title confirm-account-info__info">Account Number :</span>
@@ -1989,7 +1989,7 @@
       </ul>
     </div>
     <div class="section-bpi-button-area">
-      <button class="section-bpi__button">Proceed</button>
+      <button class="section-bpi__button" ontouchstart>Proceed</button>
     </div>
   </div>
 </section>
@@ -2013,7 +2013,7 @@
         </fieldset>
       </div>
       <div class="section-bpi-button-area">
-        <button class="section-bpi__button">Submit</button>
+        <button class="section-bpi__button" ontouchstart>Submit</button>
       </div>
     </form>
   </div>
@@ -2033,6 +2033,12 @@
     $('.js-confirm-account').removeClass('is--show');
     $('body').removeClass('is--fixed');
   };
+
+  //select account
+  $('.js-confirm-account-list__item').click(function () {
+    $('.js-confirm-account-list__item').removeClass('is--active');
+    $(this).addClass('is--active');
+  });
 
   // otp open
   function openOtp () {

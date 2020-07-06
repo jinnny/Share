@@ -54,11 +54,12 @@ body.is--fixed {
     }
   }
   &-header {
-    height: 67px !important;
+    height: 60px !important;
     padding: 16px 0;
     background: #ffffff;
     @media screen and (min-width: 767px) {
       border-bottom: 1px solid #ECECEC;
+      height: 67px !important;
     }
     .section-bpi__logo {
       text-indent: -9999px;
@@ -97,6 +98,9 @@ body.is--fixed {
       -moz-border-radius: 0;
       border-radius: 0;
     }
+    &:active {
+      background: #751317;
+    }
   }
 }
 
@@ -124,12 +128,13 @@ body.is--fixed {
       padding: 0 24px 128px;
     }
     &__item {
-      background: #FFFFFF;
+      background: #ffffff;
       box-shadow: 0px 4px 8px rgba(33, 33, 33, 0.16);
       border-radius: 8px;
       margin-top: 21px;
       padding: 16px 20px;
       min-height: 120px;
+      border: 2px solid #ffffff;
       @media screen and (max-width: 767px) {
         margin-top: 16px;
       }
@@ -226,14 +231,14 @@ body.is--fixed {
       font-family: $font-family;
       color: #AEAEAE;
       font-size: 18px;
-      padding: 0;
+      padding-left: 20px;
       line-height: 30px;
       text-align: left;
     }
     &::-moz-placeholder {
       color: #AEAEAE;
       font-size: 18px;
-      padding: 0;
+      padding-left: 20px;
       line-height: 20px;
       text-align: left;
     }
@@ -247,7 +252,7 @@ body.is--fixed {
     &:-moz-placeholder {
       color: #AEAEAE;
       font-size: 18px;
-      padding: 0;
+      padding-left: 20px;
       line-height: 20px;
       text-align: left;
     }

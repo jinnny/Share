@@ -36,12 +36,13 @@ body.is--fixed {
     width: 100%;
     height: 100%; } }
 .section-bpi-header {
-  height: 67px !important;
+  height: 60px !important;
   padding: 16px 0;
   background: #ffffff; }
 @media screen and (min-width: 767px) {
   .section-bpi-header {
-    border-bottom: 1px solid #ECECEC; } }
+    border-bottom: 1px solid #ECECEC;
+    height: 67px !important; } }
 .section-bpi-header .section-bpi__logo {
   text-indent: -9999px;
   height: 100%;
@@ -76,6 +77,8 @@ body.is--fixed {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0; } }
+.section-bpi__button:active {
+  background: #751317; }
 
 .confirm-account__description {
   color: #99191C;
@@ -98,12 +101,13 @@ body.is--fixed {
     height: calc(100vh - 60px - 67px - 55px);
     padding: 0 24px 128px; } }
 .confirm-account-list__item {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 4px 8px rgba(33, 33, 33, 0.16);
   border-radius: 8px;
   margin-top: 21px;
   padding: 16px 20px;
-  min-height: 120px; }
+  min-height: 120px;
+  border: 2px solid #ffffff; }
 @media screen and (max-width: 767px) {
   .confirm-account-list__item {
     margin-top: 16px; } }
@@ -188,13 +192,13 @@ body.is--fixed {
   font-family: "Roboto", sans-serif;
   color: #AEAEAE;
   font-size: 18px;
-  padding: 0;
+  padding-left: 20px;
   line-height: 30px;
   text-align: left; }
 .otp-verification__input::-moz-placeholder {
   color: #AEAEAE;
   font-size: 18px;
-  padding: 0;
+  padding-left: 20px;
   line-height: 20px;
   text-align: left; }
 .otp-verification__input:-ms-input-placeholder {
@@ -206,6 +210,6 @@ body.is--fixed {
 .otp-verification__input:-moz-placeholder {
   color: #AEAEAE;
   font-size: 18px;
-  padding: 0;
+  padding-left: 20px;
   line-height: 20px;
   text-align: left; }
